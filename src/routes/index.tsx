@@ -1,24 +1,45 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Hero } from "@/components/Hero";
+import { BrandIntro } from "@/components/BrandIntro";
+import { ProductShowcase } from "@/components/ProductShowcase";
+import { FeaturedCarousel } from "@/components/FeaturedCarousel";
+import { StorySection } from "@/components/StorySection";
+import { WhyCrispo } from "@/components/WhyCrispo";
+import { AboutSection } from "@/components/AboutSection";
+import { SocialSection } from "@/components/SocialSection";
+import { ContactSection } from "@/components/ContactSection";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "CRISPO COOKIES — Premium Oat Cookies & Brownies";
+const description =
+  "Baked to impress, made to crave. Premium oat-based cookies and brownies with 100% ZERO MAIDHA, handcrafted in Nellore. Order on WhatsApp.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
+    <>
+      <Hero />
+      <BrandIntro />
+      <ProductShowcase
+        eyebrow="The Collection"
+        subtitle="Switch between cookies and brownies — every box is 100% ZERO MAIDHA."
       />
-    </div>
+      <FeaturedCarousel />
+      <StorySection />
+      <WhyCrispo />
+      <AboutSection />
+      <SocialSection />
+      <ContactSection />
+    </>
   );
 }
