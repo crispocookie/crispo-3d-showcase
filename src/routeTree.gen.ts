@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BrowniesRouteImport } from './routes/brownies'
+import { Route as CookiesRouteImport } from './routes/cookies'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BrowniesRoute = BrowniesRouteImport.update({
+  id: '/brownies',
+  path: '/brownies',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CookiesRoute = CookiesRouteImport.update({
+  id: '/cookies',
+  path: '/cookies',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/brownies': typeof BrowniesRoute
+  '/cookies': typeof CookiesRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/brownies': typeof BrowniesRoute
+  '/cookies': typeof CookiesRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/brownies': typeof BrowniesRoute
+  '/cookies': typeof CookiesRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/brownies' | '/cookies'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/brownies' | '/cookies'
+  id: '__root__' | '/' | '/brownies' | '/cookies'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BrowniesRoute: typeof BrowniesRoute
+  CookiesRoute: typeof CookiesRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/brownies': {
+      id: '/brownies'
+      path: '/brownies'
+      fullPath: '/brownies'
+      preLoaderRoute: typeof BrowniesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cookies': {
+      id: '/cookies'
+      path: '/cookies'
+      fullPath: '/cookies'
+      preLoaderRoute: typeof CookiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BrowniesRoute: BrowniesRoute,
+  CookiesRoute: CookiesRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
