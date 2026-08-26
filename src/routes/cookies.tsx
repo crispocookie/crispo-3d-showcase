@@ -13,6 +13,8 @@ export const Route = createFileRoute("/cookies")({
       { name: "description", content: description },
       { property: "og:title", content: title },
       { property: "og:description", content: description },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: CookiesPage,
@@ -21,6 +23,7 @@ export const Route = createFileRoute("/cookies")({
 function CookiesPage() {
   return (
     <div className="pt-24">
+      <h1 className="sr-only">CRISPO COOKIES Cookie Collection</h1>
       <ProductShowcase
         initialCategory="cookies"
         lockCategory

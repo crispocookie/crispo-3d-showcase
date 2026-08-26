@@ -31,7 +31,7 @@ export function ProductShowcase({
       <SectionHeading
         eyebrow={eyebrow}
         title={title ?? (category === "cookies" ? "Crispo Cookies" : "Crispo Brownies")}
-        subtitle={subtitle}
+        {...(subtitle ? { subtitle } : {})}
       />
 
       <div className="mt-10 flex flex-col items-center gap-5">

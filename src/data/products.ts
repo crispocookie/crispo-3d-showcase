@@ -40,7 +40,7 @@ export type Product = {
   description: string;
   benefits: string[];
   nutrition: Nutrition[];
-  images: ProductImage[];
+  images: [ProductImage, ...ProductImage[]];
   badge: string;
   theme: "chocolate" | "rose" | "tropical" | "seed" | "mix";
   craving: string;
