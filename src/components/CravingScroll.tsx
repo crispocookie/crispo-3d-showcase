@@ -48,7 +48,7 @@ const cravings = [
 /** Scroll-revealed craving → product pairings. */
 export function CravingScroll() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+    <section className="mx-auto max-w-7xl overflow-x-clip px-4 py-20 sm:px-6 sm:py-28">
       <SectionHeading
         eyebrow="Find Your Crispo"
         title="Every craving has a CRISPO answer."
