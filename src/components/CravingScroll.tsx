@@ -54,7 +54,7 @@ export function CravingScroll() {
         title="Every craving has a CRISPO answer."
       />
 
-      <div className="mt-14 space-y-6">
+      <div className="mt-14 space-y-6 overflow-hidden">
         {cravings.map((c, i) => (
           <motion.div
             key={c.craving}
