@@ -40,7 +40,9 @@ export function ProductGallery({
       onFocus={() => setPaused(true)}
       onBlur={() => setPaused(false)}
       onTouchStart={(e) => {
-        touchStart.current = e.touches[0].clientX;
+        const touch = e.touches[0];
+        if (!touch) return;
+        touchStart.current = touch.clientX;
         setPaused(true);
       }}
       onTouchEnd={(e) => {
@@ -48,7 +50,9 @@ export function ProductGallery({
         touchStart.current = null;
         setPaused(false);
         if (start === null) return;
-        const delta = e.changedTouches[0].clientX - start;
+        const touch = e.changedTouches[0];
+        if (!touch) return;
+        const delta = touch.clientX - start;
         if (Math.abs(delta) > 40) go(delta > 0 ? -1 : 1);
       }}
     >

@@ -13,10 +13,11 @@ export function SearchDialog({ open, onClose }: { open: boolean; onClose: () => 
       const id = window.setTimeout(() => inputRef.current?.focus(), 80);
       return () => window.clearTimeout(id);
     }
+    return undefined;
   }, [open]);
 
   useEffect(() => {
-    if (!open) return;
+    if (!open) return undefined;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
