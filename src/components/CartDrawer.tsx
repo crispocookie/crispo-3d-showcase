@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Minus, Plus, ShoppingBag, Trash2, X } from "lucide-react";
 import { cartWhatsappMessage, useCart } from "@/context/cart";
 import { whatsappLink } from "@/lib/brand";
@@ -77,7 +77,9 @@ export function CartDrawer() {
                         >
                           <Minus className="size-4" aria-hidden />
                         </button>
-                        <span className="min-w-6 text-center text-sm font-semibold">{quantity}</span>
+                        <span className="min-w-6 text-center text-sm font-semibold">
+                          {quantity}
+                        </span>
                         <button
                           type="button"
                           onClick={() => setQuantity(product.id, quantity + 1)}

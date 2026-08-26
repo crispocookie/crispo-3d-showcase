@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { MessageCircle, ShoppingBag } from "lucide-react";
 import { ProductShowcase } from "@/components/ProductShowcase";
 import { FeaturedCarousel } from "@/components/FeaturedCarousel";
@@ -9,26 +8,15 @@ import { GENERAL_ENQUIRY, whatsappLink } from "@/lib/brand";
 import { ctaGold, ctaWhatsapp } from "@/components/cta";
 import doubleChoc from "@/assets/double-chocolate-cookie.jpg";
 import rose from "@/assets/rose-cookie.jpg";
+import { useMeta } from "@/hooks/use-meta";
 
 const title = "Cookies — CRISPO COOKIES | 100% ZERO MAIDHA Oat Cookies";
 const description =
   "Shop Double Chocolate, Rose, Pine Apple, Dry Seed and All Mix oat cookies from CRISPO. 100% ZERO MAIDHA, protein packed and handcrafted in Nellore.";
 
-export const Route = createFileRoute("/cookies")({
-  head: () => ({
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: CookiesPage,
-});
+export default function CookiesPage() {
+  useMeta({ title, description });
 
-function CookiesPage() {
   return (
     <PageTransition>
       <div className="pt-24">

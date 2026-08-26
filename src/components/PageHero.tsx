@@ -59,7 +59,9 @@ export function PageHero({
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div
           className="absolute -top-32 -left-24 size-[24rem] rounded-[46%_54%_38%_62%/58%_42%_58%_42%] bg-lavender/60"
-          style={{ transform: `translate3d(${tilt.x * 12}px, ${tilt.y * 10 - scroll * 0.05}px, 0)` }}
+          style={{
+            transform: `translate3d(${tilt.x * 12}px, ${tilt.y * 10 - scroll * 0.05}px, 0)`,
+          }}
         />
         <div
           className="absolute -right-28 bottom-[-5rem] size-[26rem] rounded-[58%_42%_55%_45%/45%_58%_42%_55%] bg-lavender/50"
@@ -85,7 +87,9 @@ export function PageHero({
             </span>
           ) : null}
           {actions ? (
-            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">{actions}</div>
+            <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
+              {actions}
+            </div>
           ) : null}
         </div>
 

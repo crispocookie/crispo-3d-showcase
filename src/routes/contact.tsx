@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Instagram, Mail, MapPin, MessageCircle, Phone, ShieldCheck, Youtube } from "lucide-react";
 import { motion } from "motion/react";
 import { ContactSection } from "@/components/ContactSection";
@@ -11,24 +10,11 @@ import { BRAND, GENERAL_ENQUIRY, whatsappLink } from "@/lib/brand";
 import { ctaGold, ctaOutline, ctaWhatsapp } from "@/components/cta";
 import packaging from "@/assets/packaging-lifestyle.jpg";
 import kaju2 from "@/assets/kaju-brownie-2.jpg";
+import { useMeta } from "@/hooks/use-meta";
 
 const title = "Contact CRISPO COOKIES — Order in Nellore";
 const description =
   "Let's talk CRISPO. Call, email or WhatsApp CRISPO COOKIES in Nellore to order premium oat cookies and brownies, or send an enquiry.";
-
-export const Route = createFileRoute("/contact")({
-  head: () => ({
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: ContactPage,
-});
 
 const details = [
   { icon: Phone, label: "Phone", value: BRAND.phoneDisplay },
@@ -37,7 +23,9 @@ const details = [
   { icon: ShieldCheck, label: "Food Licence", value: `FSSAI: ${BRAND.fssai}` },
 ];
 
-function ContactPage() {
+export default function ContactPage() {
+  useMeta({ title, description });
+
   return (
     <PageTransition>
       <div className="pt-24">

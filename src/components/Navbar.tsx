@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link, NavLink } from "react-router-dom";
 import { Menu, Search, ShoppingBag, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -55,14 +55,18 @@ export function Navbar() {
           <ul className="hidden items-center gap-7 lg:flex">
             {links.map((l) => (
               <li key={l.to}>
-                <Link
+                <NavLink
                   to={l.to}
-                  activeOptions={{ exact: l.to === "/" }}
-                  activeProps={{ className: "text-plum after:scale-x-100" }}
-                  className="relative text-[0.78rem] font-semibold tracking-[0.14em] text-primary/80 uppercase transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-gold after:transition-transform after:duration-300 hover:text-plum hover:after:scale-x-100"
+                  end={l.to === "/"}
+                  className={({ isActive }) =>
+                    `relative text-[0.78rem] font-semibold tracking-[0.14em] uppercase transition-colors after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-full after:origin-left after:transition-transform after:duration-300 hover:text-plum hover:after:scale-x-100 ` +
+                    (isActive
+                      ? "text-plum after:scale-x-100 after:bg-gold"
+                      : "text-primary/80 after:scale-x-0 after:bg-gold")
+                  }
                 >
                   {l.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

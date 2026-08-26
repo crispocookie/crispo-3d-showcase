@@ -1,25 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { BRAND } from "@/lib/brand";
+import { useMeta } from "@/hooks/use-meta";
 
 const title = "Privacy Policy — CRISPO COOKIES";
 const description =
   "Privacy policy for CRISPO COOKIES, including how order enquiries and contact details are handled.";
 
-export const Route = createFileRoute("/privacy")({
-  head: () => ({
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: PrivacyPage,
-});
+export default function PrivacyPage() {
+  useMeta({ title, description });
 
-function PrivacyPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 pt-32 pb-20 sm:px-6">
       <p className="eyebrow">Privacy</p>

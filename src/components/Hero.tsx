@@ -1,8 +1,8 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import heroCookie from "@/assets/hero-cookie.png";
-import logoBadge from "@/assets/crispo-logo-badge.jpeg.asset.json";
+import crispoLogo from "@/assets/crispo-logo.png";
 import { BRAND, GENERAL_ENQUIRY, whatsappLink } from "@/lib/brand";
 import { ctaGold, ctaWhatsapp } from "./cta";
 
@@ -39,7 +39,9 @@ export function Hero() {
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div
           className="absolute -top-24 -left-24 size-[26rem] rounded-[46%_54%_38%_62%/58%_42%_58%_42%] bg-lavender/70 blur-[2px]"
-          style={{ transform: `translate3d(${tilt.x * 14}px, ${tilt.y * 12 - scroll * 0.06}px, 0)` }}
+          style={{
+            transform: `translate3d(${tilt.x * 14}px, ${tilt.y * 12 - scroll * 0.06}px, 0)`,
+          }}
         />
         <div
           className="absolute -right-32 bottom-[-6rem] size-[30rem] rounded-[58%_42%_55%_45%/45%_58%_42%_55%] bg-lavender/60"
@@ -93,7 +95,7 @@ export function Hero() {
             }}
           >
             <img
-              src={logoBadge.url}
+              src={crispoLogo}
               alt="CRISPO COOKIES emblem"
               width={220}
               height={220}

@@ -22,16 +22,16 @@ Premium handmade cookies and brownies made with oats and quality ingredients.
 
 The visual identity should communicate:
 
-* Premium
-* Healthy
-* Handmade
-* Fresh
-* Modern
-* Elegant
-* Trustworthy
-* Delicious
-* High-quality
-* 3D/luxury food presentation
+- Premium
+- Healthy
+- Handmade
+- Fresh
+- Modern
+- Elegant
+- Trustworthy
+- Delicious
+- High-quality
+- 3D/luxury food presentation
 
 ## Important Brand Message
 
@@ -55,31 +55,31 @@ Create a sophisticated 3D visual language inspired by the supplied CRISPO logo.
 
 Use the brand's existing visual colors:
 
-* Deep royal purple
-* Plum
-* Lavender
-* Cream
-* Warm beige
-* Chocolate brown
-* Dark espresso
-* Gold accents
+- Deep royal purple
+- Plum
+- Lavender
+- Cream
+- Warm beige
+- Chocolate brown
+- Dark espresso
+- Gold accents
 
 Use gold sparingly for premium highlights.
 
 The website should have:
 
-* Soft 3D shadows
-* Realistic depth
-* Subtle bevels
-* Glossy product surfaces
-* Premium typography
-* Smooth rounded cards
-* Layered backgrounds
-* Elegant gradients
-* High-quality food photography
-* Subtle parallax
-* Smooth scrolling
-* Micro-interactions
+- Soft 3D shadows
+- Realistic depth
+- Subtle bevels
+- Glossy product surfaces
+- Premium typography
+- Smooth rounded cards
+- Layered backgrounds
+- Elegant gradients
+- High-quality food photography
+- Subtle parallax
+- Smooth scrolling
+- Micro-interactions
 
 Do NOT make the website overly colorful.
 
@@ -99,13 +99,13 @@ Use the supplied **first CRISPO COOKIES logo/hero reference image** as the prima
 
 The hero should recreate the feeling of that image:
 
-* Large CRISPO logo/wordmark
-* Large premium chocolate-chip cookie visual
-* Purple/gold CRISPO branding
-* Cream luxury background
-* Soft dimensional shadows
-* Elegant composition
-* Premium 3D appearance
+- Large CRISPO logo/wordmark
+- Large premium chocolate-chip cookie visual
+- Purple/gold CRISPO branding
+- Cream luxury background
+- Soft dimensional shadows
+- Elegant composition
+- Premium 3D appearance
 
 ### IMPORTANT HERO REQUIREMENT
 
@@ -115,24 +115,24 @@ Create a **high-end 3D product showcase**.
 
 The cookie should appear physically present on the page, with realistic:
 
-* Depth
-* Texture
-* Shadows
-* Highlights
-* Chocolate chips
-* Surface details
+- Depth
+- Texture
+- Shadows
+- Highlights
+- Chocolate chips
+- Surface details
 
 Use the supplied CRISPO logo exactly as the brand reference.
 
 ### DO NOT:
 
-* Stretch the logo
-* Compress the logo
-* Distort the cookie
-* Add transparent color overlays over the hero
-* Put text directly over the cookie
-* Make the hero visually cluttered
-* Use low-resolution imagery
+- Stretch the logo
+- Compress the logo
+- Distort the cookie
+- Add transparent color overlays over the hero
+- Put text directly over the cookie
+- Make the hero visually cluttered
+- Use low-resolution imagery
 
 The hero should have a clean cream background with purple decorative organic shapes similar to the first supplied reference.
 
@@ -167,10 +167,10 @@ Add subtle interactive motion.
 
 As the user moves the mouse:
 
-* Cookie should subtly tilt
-* Gold elements should catch light
-* Decorative elements should move slightly
-* Background shapes should have very subtle parallax
+- Cookie should subtly tilt
+- Gold elements should catch light
+- Decorative elements should move slightly
+- Background shapes should have very subtle parallax
 
 Do NOT make the movement excessive.
 
@@ -192,18 +192,18 @@ Left:
 
 Navigation:
 
-* Home
-* Cookies
-* Brownies
-* About
-* Why Crispo
-* Contact
+- Home
+- Cookies
+- Brownies
+- About
+- Why Crispo
+- Contact
 
 Right:
 
-* Search icon
-* Cart icon
-* WhatsApp/order button
+- Search icon
+- Cart icon
+- WhatsApp/order button
 
 The navigation should become slightly more compact after scrolling.
 
@@ -229,11 +229,11 @@ Use a large 3D cookie visual beside the text.
 
 Add small animated badges:
 
-* 100% ZERO MAIDHA
-* MADE WITH OATS
-* PREMIUM INGREDIENTS
-* HANDCRAFTED
-* MADE WITH LOVE
+- 100% ZERO MAIDHA
+- MADE WITH OATS
+- PREMIUM INGREDIENTS
+- HANDCRAFTED
+- MADE WITH LOVE
 
 ---
 
@@ -274,25 +274,25 @@ Every product card should feel premium and 3D.
 
 Each card should contain:
 
-* Large product image
-* Product name
-* Short description
-* Price
-* Weight
-* Number of pieces
-* Protein/calorie information where provided
-* “100% ZERO MAIDHA” badge
-* Add to Cart button
-* WhatsApp Order button
-* View Details button
+- Large product image
+- Product name
+- Short description
+- Price
+- Weight
+- Number of pieces
+- Protein/calorie information where provided
+- “100% ZERO MAIDHA” badge
+- Add to Cart button
+- WhatsApp Order button
+- View Details button
 
 Use hover effects:
 
-* Product image slightly lifts
-* Card casts a deeper shadow
-* Product rotates/tilts subtly
-* Gold accent appears
-* CTA becomes more prominent
+- Product image slightly lifts
+- Card casts a deeper shadow
+- Product rotates/tilts subtly
+- Gold accent appears
+- CTA becomes more prominent
 
 Do not overanimate.
 
@@ -308,11 +308,11 @@ The supplied images are references for the product presentation.
 
 Each product detail page/card should support:
 
-* Main image
-* Secondary image
-* Close-up image
-* Lifestyle image
-* Packaging image where available
+- Main image
+- Secondary image
+- Close-up image
+- Lifestyle image
+- Packaging image where available
 
 Images should automatically slide/swipe.
 
@@ -320,12 +320,12 @@ Images should automatically slide/swipe.
 
 Each product gallery should:
 
-* Automatically change image every few seconds
-* Pause when user hovers
-* Allow manual swipe
-* Allow previous/next controls
-* Show small pagination indicators
-* Support touch gestures on mobile
+- Automatically change image every few seconds
+- Pause when user hovers
+- Allow manual swipe
+- Allow previous/next controls
+- Show small pagination indicators
+- Support touch gestures on mobile
 
 Use smooth transitions.
 
@@ -369,17 +369,17 @@ Product description:
 
 Benefits/details from supplied artwork:
 
-* 100% ZERO MAIDHA
-* Pure oats goodness
-* Made with 100% pure oats
-* High-quality ingredients
-* Protein packed
-* 4 grams protein per cookie
-* 50 grams per cookie
-* 235 calories per cookie
-* No artificial flavors
-* No preservatives
-* Pure & wholesome
+- 100% ZERO MAIDHA
+- Pure oats goodness
+- Made with 100% pure oats
+- High-quality ingredients
+- Protein packed
+- 4 grams protein per cookie
+- 50 grams per cookie
+- 235 calories per cookie
+- No artificial flavors
+- No preservatives
+- Pure & wholesome
 
 Create a rich dark chocolate product environment for this product.
 
@@ -421,21 +421,21 @@ Description:
 
 Use the supplied artwork information:
 
-* Homemade rose syrup
-* Fresh rose petals
-* Natural aroma
-* Rich taste
-* 100% ZERO MAIDHA
-* Made with 100% oats powder
-* No maida
-* High-quality ingredients
-* Protein packed
-* 3.5 grams protein per cookie
-* 50 grams per cookie
-* 220 calories per cookie
-* No artificial flavors
-* No preservatives
-* Pure & wholesome
+- Homemade rose syrup
+- Fresh rose petals
+- Natural aroma
+- Rich taste
+- 100% ZERO MAIDHA
+- Made with 100% oats powder
+- No maida
+- High-quality ingredients
+- Protein packed
+- 3.5 grams protein per cookie
+- 50 grams per cookie
+- 220 calories per cookie
+- No artificial flavors
+- No preservatives
+- Pure & wholesome
 
 Visual direction:
 
@@ -483,28 +483,28 @@ Description:
 
 Supplied artwork details:
 
-* Homemade pineapple syrup
-* Prepared with care
-* 100% ZERO MAIDHA
-* Made with 100% oats powder
-* High-quality ingredients
-* Protein packed
-* 2 grams protein per cookie
-* 50 grams per cookie
-* 225 calories per cookie
-* No artificial flavors
-* No preservatives
-* Pure & wholesome
+- Homemade pineapple syrup
+- Prepared with care
+- 100% ZERO MAIDHA
+- Made with 100% oats powder
+- High-quality ingredients
+- Protein packed
+- 2 grams protein per cookie
+- 50 grams per cookie
+- 225 calories per cookie
+- No artificial flavors
+- No preservatives
+- Pure & wholesome
 
 Visual direction:
 
 Use:
 
-* Golden yellow
-* Pineapple yellow
-* Warm cream
-* Natural green
-* Gold
+- Golden yellow
+- Pineapple yellow
+- Warm cream
+- Natural green
+- Gold
 
 Use realistic pineapple elements.
 
@@ -576,10 +576,10 @@ Additional messaging:
 
 Benefits:
 
-* Packed with 4 super seeds
-* High in protein & healthy fats
-* Perfect balance of taste & nutrition
-* Guilt-free snack for any time
+- Packed with 4 super seeds
+- High in protein & healthy fats
+- Perfect balance of taste & nutrition
+- Guilt-free snack for any time
 
 Nutrition cards:
 
@@ -687,12 +687,12 @@ Description:
 
 Create premium brownie imagery with:
 
-* Dark chocolate
-* Chocolate chunks
-* Glossy brownie surface
-* Realistic crumbs
-* Soft studio lighting
-* Gold accents
+- Dark chocolate
+- Chocolate chunks
+- Glossy brownie surface
+- Realistic crumbs
+- Soft studio lighting
+- Gold accents
 
 Use the supplied brownie images as visual references.
 
@@ -732,11 +732,11 @@ Use the supplied Kaju Brownie images and packaging image.
 
 Visual direction:
 
-* Chocolate brown
-* Cream
-* Cashew beige
-* Gold
-* Purple CRISPO branding
+- Chocolate brown
+- Cream
+- Cashew beige
+- Gold
+- Purple CRISPO branding
 
 The supplied packaging image should be used in the product gallery as a packaging/lifestyle image.
 
@@ -754,25 +754,25 @@ Large product image gallery.
 
 RIGHT:
 
-* Product name
-* Rating/review placeholder
-* Price
-* Weight
-* Quantity
-* Product description
-* Nutrition information
-* “100% ZERO MAIDHA” badge
-* Quantity selector
-* Add to Cart
-* Buy on WhatsApp
+- Product name
+- Rating/review placeholder
+- Price
+- Weight
+- Quantity
+- Product description
+- Nutrition information
+- “100% ZERO MAIDHA” badge
+- Quantity selector
+- Add to Cart
+- Buy on WhatsApp
 
 Below:
 
-* Product story
-* Ingredients/benefits
-* Nutrition
-* Image gallery
-* Related products
+- Product story
+- Ingredients/benefits
+- Nutrition
+- Image gallery
+- Related products
 
 The gallery should have automatic slideshow + manual controls.
 
@@ -784,14 +784,14 @@ Create a functional cart.
 
 Users should be able to:
 
-* Add products
-* Increase quantity
-* Decrease quantity
-* Remove products
-* View subtotal
-* View total
-* Continue shopping
-* Proceed to WhatsApp order
+- Add products
+- Increase quantity
+- Decrease quantity
+- Remove products
+- View subtotal
+- View total
+- Continue shopping
+- Proceed to WhatsApp order
 
 Do not create a fake checkout if payment integration is not available.
 
@@ -835,12 +835,12 @@ For cart checkout:
 
 Generate a WhatsApp message containing:
 
-* Customer enquiry/order
-* Product names
-* Quantity
-* Price
-* Total
-* Any selected options
+- Customer enquiry/order
+- Product names
+- Quantity
+- Price
+- Total
+- Any selected options
 
 Use the WhatsApp number in international format internally:
 
@@ -1052,19 +1052,19 @@ Include:
 
 Navigation:
 
-* Home
-* Cookies
-* Brownies
-* About
-* Contact
-* Privacy Policy
-* Terms
+- Home
+- Cookies
+- Brownies
+- About
+- Contact
+- Privacy Policy
+- Terms
 
 Social:
 
-* Instagram
-* YouTube
-* WhatsApp
+- Instagram
+- YouTube
+- WhatsApp
 
 Contact:
 
@@ -1088,27 +1088,27 @@ Footer copyright:
 
 Use modern frontend technologies such as:
 
-* React
-* TypeScript
-* Tailwind CSS
-* Three.js
-* React Three Fiber
-* Framer Motion
-* GSAP where useful
+- React
+- TypeScript
+- Tailwind CSS
+- Three.js
+- React Three Fiber
+- Framer Motion
+- GSAP where useful
 
 Use 3D only where it improves the experience.
 
 Potential 3D elements:
 
-* Floating cookie
-* Rotating product
-* Floating chocolate chips
-* Seeds
-* Gold decorative elements
-* Product packaging
-* Subtle parallax objects
-* 3D typography
-* Interactive product cards
+- Floating cookie
+- Rotating product
+- Floating chocolate chips
+- Seeds
+- Gold decorative elements
+- Product packaging
+- Subtle parallax objects
+- 3D typography
+- Interactive product cards
 
 The website must remain fast.
 
@@ -1122,34 +1122,34 @@ Use premium animations.
 
 Page load:
 
-* Logo fades in
-* Hero cookie gently rises
-* Text reveals smoothly
-* Gold decorative elements move subtly
+- Logo fades in
+- Hero cookie gently rises
+- Text reveals smoothly
+- Gold decorative elements move subtly
 
 Scrolling:
 
-* Fade-up sections
-* Image parallax
-* Product reveal
-* Smooth horizontal movement
-* Subtle 3D rotations
+- Fade-up sections
+- Image parallax
+- Product reveal
+- Smooth horizontal movement
+- Subtle 3D rotations
 
 Hover:
 
-* Product lift
-* Shadow depth
-* Image zoom
-* Gold accent
-* Button micro-animation
+- Product lift
+- Shadow depth
+- Image zoom
+- Gold accent
+- Button micro-animation
 
 Avoid:
 
-* Bouncing everything
-* Excessive spinning
-* Flashing
-* Aggressive transitions
-* Cheap-looking animations
+- Bouncing everything
+- Excessive spinning
+- Flashing
+- Aggressive transitions
+- Cheap-looking animations
 
 The animation should feel like a luxury product advertisement.
 
@@ -1159,9 +1159,9 @@ The animation should feel like a luxury product advertisement.
 
 Use a sophisticated combination of:
 
-* Elegant serif display font for major headings
-* Clean modern sans-serif for body text
-* Optional elegant script font only for small accent phrases
+- Elegant serif display font for major headings
+- Clean modern sans-serif for body text
+- Optional elegant script font only for small accent phrases
 
 The typography should resemble a premium food/lifestyle brand.
 
@@ -1185,15 +1185,15 @@ Balanced product grids.
 
 Mobile:
 
-* Single-column product cards
-* Swipeable product galleries
-* Sticky bottom WhatsApp/order CTA
-* Hamburger navigation
-* Touch-friendly controls
-* Optimized image loading
-* No horizontal overflow
-* No tiny text
-* No oversized hero that pushes content too far down
+- Single-column product cards
+- Swipeable product galleries
+- Sticky bottom WhatsApp/order CTA
+- Hamburger navigation
+- Touch-friendly controls
+- Optimized image loading
+- No horizontal overflow
+- No tiny text
+- No oversized hero that pushes content too far down
 
 The mobile version must feel intentionally designed, not simply compressed from desktop.
 
@@ -1241,17 +1241,17 @@ The final result should look like a professional commercial food-brand hero.
 
 There must be:
 
-* Clean cream background
-* Purple organic decorative shapes
-* Premium CRISPO logo
-* Large realistic cookie
-* Gold detailing
-* Soft realistic shadow
-* Excellent spacing
-* No transparent overlay
-* No muddy colors
-* No blurry image
-* No overlapping UI elements
+- Clean cream background
+- Purple organic decorative shapes
+- Premium CRISPO logo
+- Large realistic cookie
+- Gold detailing
+- Soft realistic shadow
+- Excellent spacing
+- No transparent overlay
+- No muddy colors
+- No blurry image
+- No overlapping UI elements
 
 The hero must immediately communicate:
 
@@ -1265,20 +1265,20 @@ Keep all product information structured in a reusable product data model.
 
 Each product should contain:
 
-* id
-* name
-* category
-* price
-* priceRange if applicable
-* weight
-* packQuantity
-* description
-* benefits
-* nutrition
-* images
-* badge
-* whatsappMessage
-* featured
+- id
+- name
+- category
+- price
+- priceRange if applicable
+- weight
+- packQuantity
+- description
+- benefits
+- nutrition
+- images
+- badge
+- whatsappMessage
+- featured
 
 This makes it easy to add or edit products later.
 
@@ -1294,19 +1294,19 @@ The website must be dynamic.
 
 Implement:
 
-* Product filtering
-* Category filtering
-* Search
-* Product details
-* Product image galleries
-* Cart
-* Quantity updates
-* WhatsApp checkout
-* WhatsApp enquiry
-* Responsive navigation
-* Animated sections
-* Featured products
-* Related products
+- Product filtering
+- Category filtering
+- Search
+- Product details
+- Product image galleries
+- Cart
+- Quantity updates
+- WhatsApp checkout
+- WhatsApp enquiry
+- Responsive navigation
+- Animated sections
+- Featured products
+- Related products
 
 The product data should be centralized so products can be updated easily.
 
@@ -1318,15 +1318,15 @@ Add a premium search experience.
 
 Search should find:
 
-* Product name
-* Cookie
-* Brownie
-* Chocolate
-* Rose
-* Pine Apple
-* Seeds
-* Kaju
-* Oats
+- Product name
+- Cookie
+- Brownie
+- Chocolate
+- Rose
+- Pine Apple
+- Seeds
+- Kaju
+- Oats
 
 Show matching products instantly.
 
@@ -1340,11 +1340,11 @@ Create a section:
 
 Feature:
 
-* Double Chocolate Cookie
-* Rose Cookie
-* Pine Apple Cookie
-* Dry Seed Cookies
-* Kaju Oats Brownie
+- Double Chocolate Cookie
+- Rose Cookie
+- Pine Apple Cookie
+- Dry Seed Cookies
+- Kaju Oats Brownie
 
 Use a horizontal premium product carousel.
 
@@ -1356,12 +1356,12 @@ This phrase should become a recurring visual brand element.
 
 Use it as:
 
-* Product badge
-* Hero micro-badge
-* Product card badge
-* Why Crispo feature
-* Product detail highlight
-* Footer/trust section
+- Product badge
+- Hero micro-badge
+- Product card badge
+- Why Crispo feature
+- Product detail highlight
+- Footer/trust section
 
 But do not place it everywhere to the point of looking repetitive.
 
@@ -1375,18 +1375,18 @@ Buttons should not be decorative.
 
 Ensure:
 
-* Add to cart works
-* Cart updates correctly
-* WhatsApp opens correctly
-* Product details work
-* Image carousel works
-* Search works
-* Navigation works
-* Social links work
-* Phone link works
-* Email link works
-* Responsive menu works
-* Mobile swipe works
+- Add to cart works
+- Cart updates correctly
+- WhatsApp opens correctly
+- Product details work
+- Image carousel works
+- Search works
+- Navigation works
+- Social links work
+- Phone link works
+- Email link works
+- Responsive menu works
+- Mobile swipe works
 
 Do not leave placeholder buttons.
 
@@ -1396,13 +1396,13 @@ Do not leave placeholder buttons.
 
 Prioritize:
 
-* Fast initial load
-* Lazy-loaded images
-* Optimized animations
-* Responsive images
-* Efficient 3D
-* Minimal unnecessary dependencies
-* Mobile performance
+- Fast initial load
+- Lazy-loaded images
+- Optimized animations
+- Responsive images
+- Efficient 3D
+- Minimal unnecessary dependencies
+- Mobile performance
 
 Use GPU-intensive effects carefully.
 
@@ -1414,13 +1414,13 @@ Respect `prefers-reduced-motion`.
 
 Include:
 
-* Proper semantic HTML
-* Alt text for product images
-* Keyboard navigation
-* Accessible buttons
-* Visible focus states
-* Good contrast
-* Screen-reader-friendly labels
+- Proper semantic HTML
+- Alt text for product images
+- Keyboard navigation
+- Accessible buttons
+- Visible focus states
+- Good contrast
+- Screen-reader-friendly labels
 
 ---
 
@@ -1430,16 +1430,16 @@ Use ONLY the product information provided in this prompt and the supplied images
 
 Do not invent:
 
-* Ingredients
-* Prices
-* Nutritional values
-* Certifications
-* Customer reviews
-* Awards
-* Testimonials
-* Health claims
-* Delivery promises
-* Manufacturing claims
+- Ingredients
+- Prices
+- Nutritional values
+- Certifications
+- Customer reviews
+- Awards
+- Testimonials
+- Health claims
+- Delivery promises
+- Manufacturing claims
 
 If something is not provided, do not fabricate it.
 
@@ -1457,12 +1457,12 @@ Think:
 
 It should NOT feel like:
 
-* A basic Shopify template
-* A generic bakery website
-* A restaurant website
-* A simple product catalog
-* A dashboard
-* An overly glassy SaaS website
+- A basic Shopify template
+- A generic bakery website
+- A restaurant website
+- A simple product catalog
+- A dashboard
+- An overly glassy SaaS website
 
 The first 5 seconds should create the feeling:
 
@@ -1485,21 +1485,21 @@ Build the website as a polished production-quality frontend.
 
 Create reusable components such as:
 
-* Navbar
-* Hero
-* BrandIntro
-* CategorySwitcher
-* ProductGrid
-* ProductCard
-* ProductGallery
-* ProductDetails
-* CartDrawer
-* WhyCrispo
-* AboutSection
-* SocialSection
-* ContactSection
-* Footer
-* WhatsAppButton
+- Navbar
+- Hero
+- BrandIntro
+- CategorySwitcher
+- ProductGrid
+- ProductCard
+- ProductGallery
+- ProductDetails
+- CartDrawer
+- WhyCrispo
+- AboutSection
+- SocialSection
+- ContactSection
+- Footer
+- WhatsAppButton
 
 Create centralized product data.
 
@@ -1525,20 +1525,20 @@ Ensure the supplied CRISPO images are correctly assigned to the appropriate prod
 
 Before considering the website complete, test:
 
-* Desktop
-* Tablet
-* Mobile
-* Navigation
-* Product filtering
-* Search
-* Image swiping
-* Auto image rotation
-* Cart
-* WhatsApp ordering
-* Contact links
-* Social links
-* Accessibility
-* Performance
+- Desktop
+- Tablet
+- Mobile
+- Navigation
+- Product filtering
+- Search
+- Image swiping
+- Auto image rotation
+- Cart
+- WhatsApp ordering
+- Contact links
+- Social links
+- Accessibility
+- Performance
 
 The final result must be **premium, elegant, immersive, responsive, fast and production-ready.**
 

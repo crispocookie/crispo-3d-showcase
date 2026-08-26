@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { ShoppingBag, MessageCircle, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { ProductGallery } from "./ProductGallery";
@@ -74,8 +74,7 @@ export function ProductCard({ product }: { product: Product }) {
             </a>
           </div>
           <Link
-            to="/product/$productId"
-            params={{ productId: product.id }}
+            to={`/product/${product.id}`}
             className="inline-flex h-10 items-center justify-center gap-1.5 rounded-full border border-plum/30 text-[0.68rem] font-bold tracking-[0.14em] text-primary transition-colors hover:border-gold hover:text-plum"
           >
             VIEW DETAILS <ArrowRight className="size-3.5" aria-hidden />

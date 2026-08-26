@@ -52,8 +52,10 @@
   --color-chocolate: var(--chocolate);
   --color-espresso: var(--espresso);
 
-  --shadow-soft: 0 2px 6px -2px oklch(0.28 0.09 300 / 0.12), 0 14px 40px -18px oklch(0.28 0.09 300 / 0.28);
-  --shadow-lift: 0 6px 12px -6px oklch(0.28 0.09 300 / 0.2), 0 30px 60px -24px oklch(0.28 0.09 300 / 0.36);
+  --shadow-soft:
+    0 2px 6px -2px oklch(0.28 0.09 300 / 0.12), 0 14px 40px -18px oklch(0.28 0.09 300 / 0.28);
+  --shadow-lift:
+    0 6px 12px -6px oklch(0.28 0.09 300 / 0.2), 0 30px 60px -24px oklch(0.28 0.09 300 / 0.36);
   --shadow-gold: 0 0 0 1px oklch(0.78 0.13 85 / 0.45), 0 18px 44px -20px oklch(0.78 0.13 85 / 0.4);
 }
 
@@ -90,14 +92,21 @@
   --input: oklch(0.89 0.028 300);
   --ring: var(--plum);
 
-  --gradient-cream: radial-gradient(
-      120% 90% at 15% 0%,
-      oklch(0.98 0.02 88) 0%,
-      transparent 60%
-    ),
+  --gradient-cream:
+    radial-gradient(120% 90% at 15% 0%, oklch(0.98 0.02 88) 0%, transparent 60%),
     linear-gradient(160deg, oklch(0.972 0.017 88) 0%, oklch(0.945 0.03 84) 100%);
-  --gradient-royal: linear-gradient(140deg, var(--royal) 0%, var(--plum) 55%, oklch(0.3 0.1 300) 100%);
-  --gradient-gold: linear-gradient(100deg, oklch(0.72 0.11 78) 0%, oklch(0.9 0.1 92) 45%, oklch(0.7 0.12 72) 100%);
+  --gradient-royal: linear-gradient(
+    140deg,
+    var(--royal) 0%,
+    var(--plum) 55%,
+    oklch(0.3 0.1 300) 100%
+  );
+  --gradient-gold: linear-gradient(
+    100deg,
+    oklch(0.72 0.11 78) 0%,
+    oklch(0.9 0.1 92) 45%,
+    oklch(0.7 0.12 72) 100%
+  );
   --gradient-cocoa: linear-gradient(150deg, var(--espresso) 0%, var(--chocolate) 100%);
 }
 

@@ -1,26 +1,14 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { ProductShowcase } from "@/components/ProductShowcase";
 import { StorySection } from "@/components/StorySection";
+import { useMeta } from "@/hooks/use-meta";
 
 const title = "Brownies — CRISPO COOKIES";
 const description =
   "Rich. Fudgy. Irresistible. Double Chocolate Oats Brownie and Kaju Oats Brownie, made with oats and 100% ZERO MAIDHA.";
 
-export const Route = createFileRoute("/brownies")({
-  head: () => ({
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: BrowniesPage,
-});
+export default function BrowniesPage() {
+  useMeta({ title, description });
 
-function BrowniesPage() {
   return (
     <div className="pt-24">
       <h1 className="sr-only">CRISPO COOKIES Brownie Collection</h1>

@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Search, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { productPrice, searchProducts, products } from "@/data/products";
@@ -30,36 +30,29 @@ export function SearchDialog({ open, onClose }: { open: boolean; onClose: () => 
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[70] flex items-start justify-center p-4 pt-20 sm:pt-28">
+    <div className="fixed inset-0 z-50 flex items-start justify-center bg-espresso/45 p-4 pt-[15vh]">
       <button
         type="button"
         aria-label="Close search"
         onClick={onClose}
-        className="absolute inset-0 bg-espresso/45"
+        className="absolute inset-0 cursor-default"
       />
-      <div
-        role="dialog"
-        aria-label="Search products"
-        className="relative w-full max-w-xl overflow-hidden rounded-3xl bg-card shadow-lift animate-reveal"
-      >
-        <div className="flex items-center gap-3 border-b border-border px-5 py-4">
-          <Search className="size-5 text-plum" aria-hidden />
-          <label className="sr-only" htmlFor="crispo-search">
-            Search cookies and brownies
-          </label>
+      <div className="relative w-full max-w-lg rounded-3xl bg-card shadow-lift animate-in fade-in zoom-in-95 duration-200">
+        <div className="flex items-center gap-3 border-b border-border px-4 py-3">
+          <Search className="size-5 text-muted-foreground" aria-hidden />
           <input
-            id="crispo-search"
             ref={inputRef}
+            type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search chocolate, rose, pine apple, seeds, kaju, oats…"
-            className="flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground"
+            placeholder="Search cookies & brownies..."
+            className="flex-1 bg-transparent py-1.5 text-sm text-primary placeholder:text-muted-foreground focus:outline-none"
           />
           <button
             type="button"
             onClick={onClose}
             aria-label="Close search"
-            className="rounded-full p-1.5 text-primary transition-colors hover:bg-secondary"
+            className="rounded-full p-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-primary"
           >
             <X className="size-5" aria-hidden />
           </button>
@@ -73,8 +66,7 @@ export function SearchDialog({ open, onClose }: { open: boolean; onClose: () => 
             results.map((p) => (
               <li key={p.id}>
                 <Link
-                  to="/product/$productId"
-                  params={{ productId: p.id }}
+                  to={`/product/${p.id}`}
                   onClick={onClose}
                   className="flex items-center gap-4 rounded-2xl px-3 py-2.5 transition-colors hover:bg-secondary"
                 >

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { SectionHeading } from "./Reveal";
 import doubleChoc from "@/assets/double-chocolate-cookie.jpg";
 import rose from "@/assets/rose-cookie.jpg";
@@ -49,10 +49,7 @@ const cravings = [
 export function CravingScroll() {
   return (
     <section className="mx-auto max-w-7xl overflow-x-clip px-4 py-20 sm:px-6 sm:py-28">
-      <SectionHeading
-        eyebrow="Find Your Crispo"
-        title="Every craving has a CRISPO answer."
-      />
+      <SectionHeading eyebrow="Find Your Crispo" title="Every craving has a CRISPO answer." />
 
       <div className="mt-14 space-y-6 overflow-hidden">
         {cravings.map((c, i) => (
@@ -83,8 +80,7 @@ export function CravingScroll() {
               </h3>
               <p className="mt-3 text-sm tracking-[0.08em] text-muted-foreground">{c.product}</p>
               <Link
-                to="/product/$productId"
-                params={{ productId: c.id }}
+                to={`/product/${c.id}`}
                 className="mt-5 inline-flex text-[0.66rem] font-bold tracking-[0.2em] text-plum underline decoration-gold/70 decoration-2 underline-offset-4 transition-colors hover:text-primary"
               >
                 VIEW PRODUCT

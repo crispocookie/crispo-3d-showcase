@@ -34,10 +34,10 @@ export function BrandIntro() {
             A Little Crisp. <span className="text-gold-foil">A Lot of Love.</span>
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            At CRISPO COOKIES, every bite is made to bring together great taste, quality
-            ingredients and wholesome goodness. From indulgent chocolate cookies to fruity and
-            nutritious creations, our cookies are crafted with care and baked to make every moment a
-            little sweeter.
+            At CRISPO COOKIES, every bite is made to bring together great taste, quality ingredients
+            and wholesome goodness. From indulgent chocolate cookies to fruity and nutritious
+            creations, our cookies are crafted with care and baked to make every moment a little
+            sweeter.
           </p>
         </Reveal>
         <ul className="mt-8 flex flex-wrap gap-2.5">

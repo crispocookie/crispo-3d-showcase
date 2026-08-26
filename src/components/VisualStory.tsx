@@ -8,13 +8,43 @@ import kaju from "@/assets/kaju-brownie.jpg";
 import packaging from "@/assets/packaging-lifestyle.jpg";
 
 const tiles = [
-  { src: doubleChoc, alt: "CRISPO double chocolate oat cookies", span: "sm:col-span-3 sm:row-span-2", h: "h-72 sm:h-[26rem]" },
-  { src: rose, alt: "CRISPO rose oat cookies with rose petals", span: "sm:col-span-3", h: "h-56 sm:h-[12.5rem]" },
-  { src: pineapple, alt: "CRISPO pineapple oat cookies", span: "sm:col-span-2", h: "h-52 sm:h-[12.5rem]" },
+  {
+    src: doubleChoc,
+    alt: "CRISPO double chocolate oat cookies",
+    span: "sm:col-span-3 sm:row-span-2",
+    h: "h-72 sm:h-[26rem]",
+  },
+  {
+    src: rose,
+    alt: "CRISPO rose oat cookies with rose petals",
+    span: "sm:col-span-3",
+    h: "h-56 sm:h-[12.5rem]",
+  },
+  {
+    src: pineapple,
+    alt: "CRISPO pineapple oat cookies",
+    span: "sm:col-span-2",
+    h: "h-52 sm:h-[12.5rem]",
+  },
   { src: seed, alt: "CRISPO dry seed cookies", span: "sm:col-span-1", h: "h-52 sm:h-[12.5rem]" },
-  { src: brownie, alt: "CRISPO double chocolate oats brownies", span: "sm:col-span-2", h: "h-56 sm:h-64" },
-  { src: kaju, alt: "CRISPO kaju oats brownies with cashews", span: "sm:col-span-2", h: "h-56 sm:h-64" },
-  { src: packaging, alt: "CRISPO lavender gift box with gold ribbon", span: "sm:col-span-2", h: "h-56 sm:h-64" },
+  {
+    src: brownie,
+    alt: "CRISPO double chocolate oats brownies",
+    span: "sm:col-span-2",
+    h: "h-56 sm:h-64",
+  },
+  {
+    src: kaju,
+    alt: "CRISPO kaju oats brownies with cashews",
+    span: "sm:col-span-2",
+    h: "h-56 sm:h-64",
+  },
+  {
+    src: packaging,
+    alt: "CRISPO lavender gift box with gold ribbon",
+    span: "sm:col-span-2",
+    h: "h-56 sm:h-64",
+  },
 ];
 
 export function VisualStory() {

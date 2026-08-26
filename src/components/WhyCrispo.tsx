@@ -35,10 +35,7 @@ const reasons = [
 export function WhyCrispo() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
-      <SectionHeading
-        eyebrow="Why Crispo?"
-        title="Premium by intention, wholesome by recipe."
-      />
+      <SectionHeading eyebrow="Why Crispo?" title="Premium by intention, wholesome by recipe." />
 
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {reasons.map((r, i) => (

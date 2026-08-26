@@ -1,4 +1,4 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { motion } from "motion/react";
 import { SectionHeading } from "./Reveal";
 import { products } from "@/data/products";
@@ -13,12 +13,12 @@ export function StorySection() {
           tone="dark"
           eyebrow="Choose Your Crave"
           title="Five moods. One box away."
-          subtitle="Scroll through the CRISPO range and follow your craving."
+          subtitle="Match your moment with oat-based cookies and brownies. No compromise on taste."
         />
 
-        <div className="no-scrollbar mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4">
+        <div className="mt-12 -mx-4 flex snap-x snap-mandatory overflow-x-auto px-4 pb-8 sm:-mx-6 sm:px-6 lg:grid lg:grid-cols-5 lg:overflow-visible lg:pb-0 scrollbar-none gap-6">
           {cravings.map((craving, i) => {
-            const product = products.find((p) => p.craving === craving);
+            const product = products[i];
             if (!product) return null;
             return (
               <motion.div
@@ -30,8 +30,7 @@ export function StorySection() {
                 className="w-[78vw] shrink-0 snap-start sm:w-[19rem]"
               >
                 <Link
-                  to="/product/$productId"
-                  params={{ productId: product.id }}
+                  to={`/product/${product.id}`}
                   className="group block overflow-hidden rounded-[2rem] border border-gold/25 bg-espresso/40 transition-transform duration-500 hover:-translate-y-2"
                 >
                   <img

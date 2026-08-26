@@ -1,11 +1,11 @@
-import { Link } from "@tanstack/react-router";
-import logoBadge from "@/assets/crispo-logo-badge.jpeg.asset.json";
+import { Link } from "react-router-dom";
+import crispoLogo from "@/assets/crispo-logo.png";
 
 export function Logo({ compact = false }: { compact?: boolean }) {
   return (
     <Link to="/" className="group flex items-center gap-3" aria-label="CRISPO COOKIES home">
       <img
-        src={logoBadge.url}
+        src={crispoLogo}
         alt="CRISPO COOKIES logo"
         width={96}
         height={96}

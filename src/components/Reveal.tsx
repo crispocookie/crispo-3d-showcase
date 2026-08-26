@@ -40,9 +40,7 @@ export function SectionHeading({
 }) {
   return (
     <Reveal
-      className={
-        align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl text-left"
-      }
+      className={align === "center" ? "mx-auto max-w-2xl text-center" : "max-w-2xl text-left"}
     >
       {eyebrow ? (
         <p className={tone === "dark" ? "eyebrow text-gold" : "eyebrow"}>{eyebrow}</p>

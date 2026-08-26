@@ -19,9 +19,10 @@ export function EnquiryForm() {
     message: "",
   });
 
-  const set = (key: keyof typeof form) => (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>,
-  ) => setForm((f) => ({ ...f, [key]: e.target.value }));
+  const set =
+    (key: keyof typeof form) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) =>
+      setForm((f) => ({ ...f, [key]: e.target.value }));
 
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -94,7 +95,12 @@ export function EnquiryForm() {
               <label className={label} htmlFor="ef-product">
                 Product Interested In
               </label>
-              <select id="ef-product" value={form.product} onChange={set("product")} className={field}>
+              <select
+                id="ef-product"
+                value={form.product}
+                onChange={set("product")}
+                className={field}
+              >
                 <option value="">Select a product</option>
                 {products.map((p) => (
                   <option key={p.id} value={p.name}>

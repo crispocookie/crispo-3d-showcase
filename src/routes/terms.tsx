@@ -1,25 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { BRAND } from "@/lib/brand";
+import { useMeta } from "@/hooks/use-meta";
 
 const title = "Terms — CRISPO COOKIES Orders";
 const description =
   "Terms for ordering CRISPO COOKIES premium oat cookies and brownies, including availability, confirmation and delivery details.";
 
-export const Route = createFileRoute("/terms")({
-  head: () => ({
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: TermsPage,
-});
+export default function TermsPage() {
+  useMeta({ title, description });
 
-function TermsPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 pt-32 pb-20 sm:px-6">
       <p className="eyebrow">Terms</p>

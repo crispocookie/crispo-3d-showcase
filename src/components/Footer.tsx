@@ -1,6 +1,6 @@
-import { Link } from "@tanstack/react-router";
+import { Link } from "react-router-dom";
 import { Instagram, MessageCircle, Youtube } from "lucide-react";
-import logoBadge from "@/assets/crispo-logo-badge.jpeg.asset.json";
+import crispoLogo from "@/assets/crispo-logo.png";
 import { BRAND, GENERAL_ENQUIRY, whatsappLink } from "@/lib/brand";
 
 const nav = [
@@ -20,7 +20,7 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <img
-              src={logoBadge.url}
+              src={crispoLogo}
               alt="CRISPO COOKIES logo"
               width={64}
               height={64}
@@ -36,7 +36,9 @@ export function Footer() {
         </div>
 
         <nav aria-label="Footer">
-          <h2 className="text-[0.62rem] font-bold tracking-[0.24em] text-gold uppercase">Explore</h2>
+          <h2 className="text-[0.62rem] font-bold tracking-[0.24em] text-gold uppercase">
+            Explore
+          </h2>
           <ul className="mt-4 space-y-2.5">
             {nav.map((n) => (
               <li key={n.to}>
@@ -49,7 +51,9 @@ export function Footer() {
         </nav>
 
         <div>
-          <h2 className="text-[0.62rem] font-bold tracking-[0.24em] text-gold uppercase">Contact</h2>
+          <h2 className="text-[0.62rem] font-bold tracking-[0.24em] text-gold uppercase">
+            Contact
+          </h2>
           <ul className="mt-4 space-y-2.5 text-sm text-cream/75">
             <li>
               <a href={`tel:${BRAND.phoneTel}`} className="transition-colors hover:text-gold">

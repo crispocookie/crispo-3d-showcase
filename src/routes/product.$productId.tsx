@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, MessageCircle, Minus, Plus, ShoppingBag } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -6,47 +6,30 @@ import { ProductGallery } from "@/components/ProductGallery";
 import { ProductCard } from "@/components/ProductCard";
 import { badgeZero, ctaGold, ctaWhatsapp } from "@/components/cta";
 import { useCart } from "@/context/cart";
-import {
-  getProduct,
-  productOrderMessage,
-  productPrice,
-  relatedProducts,
-} from "@/data/products";
+import { getProduct, productOrderMessage, productPrice, relatedProducts } from "@/data/products";
 import { whatsappLink } from "@/lib/brand";
+import { useMeta } from "@/hooks/use-meta";
 
-export const Route = createFileRoute("/product/$productId")({
-  loader: ({ params }) => {
-    const product = getProduct(params.productId);
-    if (!product) throw notFound();
-    return { product };
-  },
-  head: ({ loaderData }) => {
-    const product = loaderData?.product;
-    const title = product
-      ? `${product.name} — CRISPO COOKIES`
-      : "Product Unavailable — CRISPO COOKIES";
-    const description = product
-      ? `${product.description} Order ${product.packQuantity} from CRISPO COOKIES.`
-      : "This CRISPO COOKIES product is currently unavailable.";
-    return {
-      meta: [
-        { title },
-        { name: "description", content: description },
-        { property: "og:title", content: title },
-        { property: "og:description", content: description },
-        { property: "og:type", content: "website" },
-        { name: "twitter:card", content: "summary_large_image" },
-      ],
-    };
-  },
-  notFoundComponent: ProductNotFound,
-  component: ProductPage,
-});
+export default function ProductPage() {
+  const { productId } = useParams<{ productId: string }>();
+  const product = productId ? getProduct(productId) : undefined;
 
-function ProductPage() {
-  const { product } = Route.useLoaderData();
+  const title = product
+    ? `${product.name} — CRISPO COOKIES`
+    : "Product Unavailable — CRISPO COOKIES";
+  const description = product
+    ? `${product.description} Order ${product.packQuantity} from CRISPO COOKIES.`
+    : "This CRISPO COOKIES product is currently unavailable.";
+
+  useMeta({ title, description });
+
   const { add, openCart } = useCart();
   const [quantity, setQuantity] = useState(1);
+
+  if (!product) {
+    return <ProductNotFound />;
+  }
+
   const related = relatedProducts(product);
 
   const addToCart = () => {
@@ -77,11 +60,15 @@ function ProductPage() {
           <h1 className="mt-5 font-display text-5xl leading-[0.98] font-medium text-primary sm:text-6xl">
             {product.name}
           </h1>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{product.description}</p>
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+            {product.description}
+          </p>
 
           <div className="mt-8 grid gap-3 sm:grid-cols-3">
             <div className="rounded-2xl bg-secondary/70 p-4">
-              <p className="text-[0.62rem] font-bold tracking-[0.18em] text-plum uppercase">Price</p>
+              <p className="text-[0.62rem] font-bold tracking-[0.18em] text-plum uppercase">
+                Price
+              </p>
               <p className="mt-1 font-display text-2xl text-primary">{productPrice(product)}</p>
             </div>
             <div className="rounded-2xl bg-secondary/70 p-4">
@@ -89,7 +76,9 @@ function ProductPage() {
               <p className="mt-1 font-display text-2xl text-primary">{product.packQuantity}</p>
             </div>
             <div className="rounded-2xl bg-secondary/70 p-4">
-              <p className="text-[0.62rem] font-bold tracking-[0.18em] text-plum uppercase">Weight</p>
+              <p className="text-[0.62rem] font-bold tracking-[0.18em] text-plum uppercase">
+                Weight
+              </p>
               <p className="mt-1 font-display text-2xl text-primary">{product.weight}</p>
             </div>
           </div>
@@ -129,7 +118,10 @@ function ProductPage() {
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2">
             {product.nutrition.map((item) => (
-              <div key={item.label} className="rounded-2xl border border-lavender/50 bg-card/70 p-4">
+              <div
+                key={item.label}
+                className="rounded-2xl border border-lavender/50 bg-card/70 p-4"
+              >
                 <p className="text-[0.62rem] font-bold tracking-[0.18em] text-plum uppercase">
                   {item.label}
                 </p>

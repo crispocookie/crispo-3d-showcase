@@ -1,4 +1,3 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { AboutSection } from "@/components/AboutSection";
 import { BrandIntro } from "@/components/BrandIntro";
 import { SocialSection } from "@/components/SocialSection";
@@ -12,26 +11,15 @@ import flatlay from "@/assets/editorial-flatlay.jpg";
 import kaju from "@/assets/kaju-brownie.jpg";
 import allMix from "@/assets/all-mix-cookies.jpg";
 import brownie2 from "@/assets/double-chocolate-brownie-2.jpg";
+import { useMeta } from "@/hooks/use-meta";
 
 const title = "About CRISPO COOKIES — The Story Behind Crispo";
 const description =
   "The story behind CRISPO COOKIES: a Nellore bakery crafting premium oat cookies and brownies with 100% ZERO MAIDHA, baked with purpose and made with love.";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title },
-      { name: "description", content: description },
-      { property: "og:title", content: title },
-      { property: "og:description", content: description },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-    ],
-  }),
-  component: AboutPage,
-});
+export default function AboutPage() {
+  useMeta({ title, description });
 
-function AboutPage() {
   return (
     <PageTransition>
       <div className="pt-24">
