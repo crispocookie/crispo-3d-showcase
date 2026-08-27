@@ -11,7 +11,6 @@ import brownie from "@/assets/double-chocolate-brownie.jpg";
 import brownie2 from "@/assets/double-chocolate-brownie-2.jpg";
 import kaju from "@/assets/kaju-brownie.jpg";
 import kaju2 from "@/assets/kaju-brownie-2.jpg";
-import flatlay from "@/assets/editorial-flatlay.jpg";
 import doubleChocolatePackaging from "@/assets/Double chocolate cookie.jpg";
 import rosePackaging from "@/assets/Rose cookie.jpg";
 import pineapplePackaging from "@/assets/Pineapple cookie.jpg";
@@ -89,7 +88,6 @@ export const products: Product[] = [
         alt: "CRISPO Double Chocolate Cookie packaging box with 5 cookies",
         fit: "contain",
       },
-      { src: flatlay, alt: "Editorial flat lay of CRISPO cookies and brownies", fit: "cover" },
     ],
     badge: ZERO,
     theme: "chocolate",
@@ -229,7 +227,6 @@ export const products: Product[] = [
     nutrition: [{ label: "Pack", value: "4 cookies" }],
     images: [
       { src: allMix, alt: "Assortment of CRISPO cookie flavours on a plate", fit: "cover" },
-      { src: flatlay, alt: "Editorial flat lay of CRISPO cookies and brownies", fit: "cover" },
       {
         src: allMixPackaging,
         alt: "CRISPO All Mix Cookies packaging box with four cookie flavours",
@@ -261,7 +258,6 @@ export const products: Product[] = [
     images: [
       { src: brownie, alt: "CRISPO double chocolate oats brownies stacked", fit: "cover" },
       { src: brownie2, alt: "Macro close-up of a fudgy chocolate brownie", fit: "cover" },
-      { src: flatlay, alt: "Editorial flat lay of CRISPO cookies and brownies", fit: "cover" },
       {
         src: doubleChocolateBrowniePackaging,
         alt: "CRISPO Double Chocolate Oats Brownie packaging box",
