@@ -17,6 +17,14 @@ import pineapplePackaging from "@/assets/Pineapple cookie.jpg";
 import drySeedPackaging from "@/assets/dry seed cookie.jpg";
 import allMixPackaging from "@/assets/all mix cookie.jpg";
 import doubleChocolateBrowniePackaging from "@/assets/Double chocolate Otas brownie.jpg";
+import doubleChoc3 from "@/assets/double-chocolate-cookie-3.jpg";
+import rose3 from "@/assets/rose-cookie-3.jpg";
+import pineapple3 from "@/assets/pineapple-cookie-3.jpg";
+import seed3 from "@/assets/dry-seed-cookie-3.jpg";
+import allMix2 from "@/assets/all-mix-cookies-2.jpg";
+import allMix3 from "@/assets/all-mix-cookies-3.jpg";
+import brownie3 from "@/assets/double-chocolate-brownie-3.jpg";
+import kaju3 from "@/assets/kaju-brownie-3.jpg";
 import kajuBrowniePackaging from "@/assets/Kaju Otas brownie.jpg";
 
 export type Category = "cookies" | "brownies";
@@ -88,6 +96,11 @@ export const products: Product[] = [
         alt: "CRISPO Double Chocolate Cookie packaging box with 5 cookies",
         fit: "contain",
       },
+      {
+        src: doubleChoc3,
+        alt: "Double chocolate oat cookies with chocolate chunks on slate",
+        fit: "cover",
+      },
     ],
     badge: ZERO,
     theme: "chocolate",
@@ -131,6 +144,7 @@ export const products: Product[] = [
         alt: "CRISPO Rose Cookie packaging box with 5 rose cookies",
         fit: "contain",
       },
+      { src: rose3, alt: "Rose cookies styled with fresh rose petals on marble", fit: "cover" },
     ],
     badge: ZERO,
     theme: "rose",
@@ -171,6 +185,11 @@ export const products: Product[] = [
         alt: "CRISPO Pine Apple Cookie packaging box with 5 pineapple cookies",
         fit: "contain",
       },
+      {
+        src: pineapple3,
+        alt: "Golden pineapple cookies plated with fresh pineapple",
+        fit: "cover",
+      },
     ],
     badge: ZERO,
     theme: "tropical",
@@ -207,6 +226,11 @@ export const products: Product[] = [
         alt: "CRISPO Dry Seed Cookies packaging box with four seed cookies",
         fit: "contain",
       },
+      {
+        src: seed3,
+        alt: "Stack of dry seed cookies with pumpkin, sunflower and flax seeds",
+        fit: "cover",
+      },
     ],
     badge: ZERO,
     theme: "seed",
@@ -228,9 +252,19 @@ export const products: Product[] = [
     images: [
       { src: allMix, alt: "Assortment of CRISPO cookie flavours on a plate", fit: "cover" },
       {
+        src: allMix2,
+        alt: "Close-up of four CRISPO cookie varieties on a ceramic plate",
+        fit: "cover",
+      },
+      {
         src: allMixPackaging,
         alt: "CRISPO All Mix Cookies packaging box with four cookie flavours",
         fit: "contain",
+      },
+      {
+        src: allMix3,
+        alt: "All mix cookie assortment presented as a premium gift set",
+        fit: "cover",
       },
     ],
     badge: ZERO,
@@ -263,6 +297,11 @@ export const products: Product[] = [
         alt: "CRISPO Double Chocolate Oats Brownie packaging box",
         fit: "contain",
       },
+      {
+        src: brownie3,
+        alt: "Fudgy double chocolate oats brownies with melting chocolate",
+        fit: "cover",
+      },
     ],
     badge: ZERO,
     theme: "chocolate",
@@ -294,6 +333,7 @@ export const products: Product[] = [
         alt: "CRISPO Kaju Oats Brownie packaging box with cashew brownies",
         fit: "contain",
       },
+      { src: kaju3, alt: "Kaju oats brownies topped with whole roasted cashews", fit: "cover" },
     ],
     badge: ZERO,
     theme: "chocolate",
