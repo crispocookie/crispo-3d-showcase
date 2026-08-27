@@ -12,13 +12,13 @@ import brownie2 from "@/assets/double-chocolate-brownie-2.jpg";
 import kaju from "@/assets/kaju-brownie.jpg";
 import kaju2 from "@/assets/kaju-brownie-2.jpg";
 import flatlay from "@/assets/editorial-flatlay.jpg";
-import packDoubleChocCookie from "@/assets/pack-Double_chocolate_cookie.webp.asset.json";
-import packRoseCookie from "@/assets/pack-Rose_cookie.webp.asset.json";
-import packPineappleCookie from "@/assets/pack-Pineapple_cookie.webp.asset.json";
-import packDrySeedCookie from "@/assets/pack-dry_seed_cookie.webp.asset.json";
-import packAllMixCookie from "@/assets/pack-all_mix_cookie.webp.asset.json";
-import packDoubleChocBrownie from "@/assets/pack-Double_chocolate_Otas_brownie.webp.asset.json";
-import packKajuBrownie from "@/assets/pack-Kaju_Otas_brownie.png.asset.json";
+import doubleChocolatePackaging from "@/assets/Double chocolate cookie.jpg";
+import rosePackaging from "@/assets/Rose cookie.jpg";
+import pineapplePackaging from "@/assets/Pineapple cookie.jpg";
+import drySeedPackaging from "@/assets/dry seed cookie.jpg";
+import allMixPackaging from "@/assets/all mix cookie.jpg";
+import doubleChocolateBrowniePackaging from "@/assets/Double chocolate Otas brownie.jpg";
+import kajuBrowniePackaging from "@/assets/Kaju Otas brownie.jpg";
 
 export type Category = "cookies" | "brownies";
 
@@ -85,7 +85,7 @@ export const products: Product[] = [
       { src: doubleChoc, alt: "Stack of CRISPO double chocolate oat cookies", fit: "cover" },
       { src: doubleChoc2, alt: "Close-up of a double chocolate cookie broken open", fit: "cover" },
       {
-        src: packDoubleChocCookie.url,
+        src: doubleChocolatePackaging,
         alt: "CRISPO Double Chocolate Cookie packaging box with 5 cookies",
         fit: "contain",
       },
@@ -129,7 +129,7 @@ export const products: Product[] = [
       { src: rose, alt: "CRISPO rose oat cookies with fresh rose petals", fit: "cover" },
       { src: rose2, alt: "Macro close-up of a rose cookie with dried petals", fit: "cover" },
       {
-        src: packRoseCookie.url,
+        src: rosePackaging,
         alt: "CRISPO Rose Cookie packaging box with 5 rose cookies",
         fit: "contain",
       },
@@ -169,7 +169,7 @@ export const products: Product[] = [
       { src: pineapple, alt: "CRISPO pineapple oat cookies with fresh pineapple", fit: "cover" },
       { src: pineapple2, alt: "Close-up of a pineapple cookie broken in half", fit: "cover" },
       {
-        src: packPineappleCookie.url,
+        src: pineapplePackaging,
         alt: "CRISPO Pine Apple Cookie packaging box with 5 pineapple cookies",
         fit: "contain",
       },
@@ -205,7 +205,7 @@ export const products: Product[] = [
       { src: seed, alt: "CRISPO dry seed cookies with bowls of seeds", fit: "cover" },
       { src: seed2, alt: "Macro close-up of a four-seed cookie", fit: "cover" },
       {
-        src: packDrySeedCookie.url,
+        src: drySeedPackaging,
         alt: "CRISPO Dry Seed Cookies packaging box with four seed cookies",
         fit: "contain",
       },
@@ -231,7 +231,7 @@ export const products: Product[] = [
       { src: allMix, alt: "Assortment of CRISPO cookie flavours on a plate", fit: "cover" },
       { src: flatlay, alt: "Editorial flat lay of CRISPO cookies and brownies", fit: "cover" },
       {
-        src: packAllMixCookie.url,
+        src: allMixPackaging,
         alt: "CRISPO All Mix Cookies packaging box with four cookie flavours",
         fit: "contain",
       },
@@ -263,7 +263,7 @@ export const products: Product[] = [
       { src: brownie2, alt: "Macro close-up of a fudgy chocolate brownie", fit: "cover" },
       { src: flatlay, alt: "Editorial flat lay of CRISPO cookies and brownies", fit: "cover" },
       {
-        src: packDoubleChocBrownie.url,
+        src: doubleChocolateBrowniePackaging,
         alt: "CRISPO Double Chocolate Oats Brownie packaging box",
         fit: "contain",
       },
@@ -294,7 +294,7 @@ export const products: Product[] = [
       { src: kaju, alt: "CRISPO kaju oats brownies topped with cashews", fit: "cover" },
       { src: kaju2, alt: "Close-up of a cashew chocolate oats brownie", fit: "cover" },
       {
-        src: packKajuBrownie.url,
+        src: kajuBrowniePackaging,
         alt: "CRISPO Kaju Oats Brownie packaging box with cashew brownies",
         fit: "contain",
       },
