@@ -11,8 +11,14 @@ import brownie from "@/assets/double-chocolate-brownie.jpg";
 import brownie2 from "@/assets/double-chocolate-brownie-2.jpg";
 import kaju from "@/assets/kaju-brownie.jpg";
 import kaju2 from "@/assets/kaju-brownie-2.jpg";
-import packaging from "@/assets/packaging-lifestyle.jpg";
 import flatlay from "@/assets/editorial-flatlay.jpg";
+import packDoubleChocCookie from "@/assets/pack-Double_chocolate_cookie.webp.asset.json";
+import packRoseCookie from "@/assets/pack-Rose_cookie.webp.asset.json";
+import packPineappleCookie from "@/assets/pack-Pineapple_cookie.webp.asset.json";
+import packDrySeedCookie from "@/assets/pack-dry_seed_cookie.webp.asset.json";
+import packAllMixCookie from "@/assets/pack-all_mix_cookie.webp.asset.json";
+import packDoubleChocBrownie from "@/assets/pack-Double_chocolate_Otas_brownie.webp.asset.json";
+import packKajuBrownie from "@/assets/pack-Kaju_Otas_brownie.png.asset.json";
 
 export type Category = "cookies" | "brownies";
 
