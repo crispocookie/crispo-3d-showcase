@@ -22,7 +22,7 @@ import rose3 from "@/assets/rose-cookie-3.jpg";
 import pineapple3 from "@/assets/pineapple-cookie-3.jpg";
 import seed3 from "@/assets/dry-seed-cookie-3.jpg";
 import allMix2 from "@/assets/all-mix-cookie-2.jpg";
-import allMix3 from "@/assets/all-mix-cookies-3.jpg";
+import allMix3 from "@/assets/all-mix-cookie-3.jpg";
 import brownie3 from "@/assets/double-chocolate-brownie-3.jpg";
 import kaju3 from "@/assets/kaju-brownie-3.jpg";
 import kajuBrowniePackaging from "@/assets/Kaju Otas brownie.jpg";
