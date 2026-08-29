@@ -26,7 +26,9 @@ export function HeroVideoCarousel({ className = "" }: { className?: string }) {
   }, [active]);
 
   return (
-    <div className={`relative aspect-[4/5] w-full overflow-hidden rounded-[2.5rem] shadow-lift sm:aspect-square ${className}`}>
+    <div
+      className={`relative aspect-[4/5] w-full overflow-hidden rounded-[2rem] shadow-lift ring-1 ring-cream/60 sm:aspect-square lg:aspect-auto lg:min-h-[34rem] xl:min-h-[38rem] ${className}`}
+    >
       {clips.map((src, i) => (
         <video
           key={src}
