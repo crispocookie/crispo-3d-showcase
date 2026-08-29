@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import crispoLogo from "@/assets/crispo-logo.png";
-import packagingAsset from "@/assets/crispo-allmix-packaging.png.asset.json";
 import { BRAND, GENERAL_ENQUIRY, whatsappLink } from "@/lib/brand";
 import { ctaGold, ctaWhatsapp } from "./cta";
 import { HeroVideoCarousel } from "./HeroVideoCarousel";
@@ -42,7 +40,7 @@ export function Hero() {
         <div className="absolute -top-24 right-1/4 size-[22rem] rounded-full bg-gold-soft/25 blur-3xl" />
       </div>
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-6">
+      <div className="mx-auto grid w-full max-w-[92rem] items-center gap-10 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-8 xl:gap-12">
         <div className="animate-rise text-center lg:text-left">
           <span className="inline-flex items-center gap-2 rounded-full border border-gold/60 bg-cream/80 px-4 py-1.5 text-[0.62rem] font-bold tracking-[0.24em] text-espresso shadow-soft">
             {BRAND.zeroMaidha}
@@ -73,45 +71,23 @@ export function Hero() {
           </p>
         </div>
 
-        <div className="scene-3d relative mx-auto w-full max-w-lg">
+        {/* large cinematic hero video — the primary visual of the hero */}
+        <div className="scene-3d relative w-full">
           <div
             className="relative"
             style={{
-              transform: `rotateX(${-tilt.y * 4}deg) rotateY(${tilt.x * 6}deg) translateY(${
+              transform: `rotateX(${-tilt.y * 2.5}deg) rotateY(${tilt.x * 3.5}deg) translateY(${
                 -scroll * 0.05
               }px)`,
               transformStyle: "preserve-3d",
               transition: "transform 500ms cubic-bezier(0.22,1,0.36,1)",
             }}
           >
-            <img
-              src={crispoLogo}
-              alt="CRISPO COOKIES emblem"
-              width={220}
-              height={220}
-              className="absolute -top-6 -left-4 z-10 size-24 rounded-full object-contain shadow-lift sm:size-32"
-              style={{ transform: "translateZ(70px)" }}
-            />
             <HeroVideoCarousel />
             <div
               aria-hidden
-              className="mx-auto mt-4 h-6 w-2/3 rounded-[50%] bg-plum/20 blur-xl"
+              className="mx-auto -mt-3 h-8 w-4/5 rounded-[50%] bg-plum/25 blur-2xl"
               style={{ transform: "translateZ(-40px)" }}
-            />
-          </div>
-
-          {/* premium packaging visual — replaces the old lavender blob */}
-          <div
-            className="animate-float pointer-events-none absolute -bottom-10 -left-4 w-40 sm:-left-12 sm:w-56 lg:-left-20 lg:w-64"
-            style={{
-              transform: `translate3d(${tilt.x * -12}px, ${tilt.y * -8 - scroll * 0.03}px, 0)`,
-              transition: "transform 600ms cubic-bezier(0.22,1,0.36,1)",
-            }}
-          >
-            <img
-              src={packagingAsset.url}
-              alt="Premium CRISPO all-mix cookie box with double chocolate, rose, pineapple and dry seed cookies"
-              className="w-full rounded-[1.75rem] object-contain drop-shadow-[0_36px_44px_oklch(0.33_0.13_302/0.35)]"
             />
           </div>
         </div>
