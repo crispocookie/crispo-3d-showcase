@@ -58,19 +58,12 @@ export function PageHero({
     <section className="relative overflow-hidden pt-10 pb-14 sm:pt-16 sm:pb-20">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
         <div
-          className="absolute -top-32 -left-24 size-[24rem] rounded-[46%_54%_38%_62%/58%_42%_58%_42%] bg-lavender/60"
-          style={{
-            transform: `translate3d(${tilt.x * 12}px, ${tilt.y * 10 - scroll * 0.05}px, 0)`,
-          }}
-        />
-        <div
-          className="absolute -right-28 bottom-[-5rem] size-[26rem] rounded-[58%_42%_55%_45%/45%_58%_42%_55%] bg-lavender/50"
-          style={{
-            transform: `translate3d(${tilt.x * -14}px, ${tilt.y * -8 - scroll * 0.03}px, 0)`,
-          }}
+          className="absolute -top-32 left-1/4 size-[24rem] rounded-full bg-gold-soft/20 blur-3xl"
+          style={{ transform: `translate3d(0, ${-scroll * 0.05}px, 0)` }}
         />
         <div className="absolute top-1/4 left-1/2 size-[30rem] -translate-x-1/2 rounded-full bg-beige/70 blur-3xl" />
       </div>
+
 
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr]">
         <div className="animate-rise text-center lg:text-left">

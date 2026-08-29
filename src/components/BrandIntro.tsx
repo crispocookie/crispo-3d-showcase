@@ -15,7 +15,7 @@ export function BrandIntro() {
     <section className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-2">
       <Reveal className="scene-3d order-2 lg:order-1">
         <div className="relative">
-          <div className="absolute -inset-4 rounded-[3rem] bg-lavender/40 blur-2xl" aria-hidden />
+          <div className="absolute -inset-4 rounded-[3rem] bg-beige/60 blur-2xl" aria-hidden />
           <img
             src={allMix}
             alt="Assortment of CRISPO oat cookies on a plate"

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import heroCookie from "@/assets/hero-cookie.png";
 import crispoLogo from "@/assets/crispo-logo.png";
+import packagingAsset from "@/assets/crispo-allmix-packaging.png.asset.json";
 import { BRAND, GENERAL_ENQUIRY, whatsappLink } from "@/lib/brand";
 import { ctaGold, ctaWhatsapp } from "./cta";
+import { HeroVideoCarousel } from "./HeroVideoCarousel";
 
 export function Hero() {
   const [tilt, setTilt] = useState({ x: 0, y: 0 });
@@ -35,21 +36,10 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
-      {/* purple organic decorative shapes */}
+      {/* warm cream light wash */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-        <div
-          className="absolute -top-24 -left-24 size-[26rem] rounded-[46%_54%_38%_62%/58%_42%_58%_42%] bg-lavender/70 blur-[2px]"
-          style={{
-            transform: `translate3d(${tilt.x * 14}px, ${tilt.y * 12 - scroll * 0.06}px, 0)`,
-          }}
-        />
-        <div
-          className="absolute -right-32 bottom-[-6rem] size-[30rem] rounded-[58%_42%_55%_45%/45%_58%_42%_55%] bg-lavender/60"
-          style={{
-            transform: `translate3d(${tilt.x * -18}px, ${tilt.y * -10 - scroll * 0.04}px, 0)`,
-          }}
-        />
         <div className="absolute top-1/3 left-1/2 size-[34rem] -translate-x-1/2 rounded-full bg-beige/70 blur-3xl" />
+        <div className="absolute -top-24 right-1/4 size-[22rem] rounded-full bg-gold-soft/25 blur-3xl" />
       </div>
 
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr] lg:gap-6">
@@ -87,7 +77,7 @@ export function Hero() {
           <div
             className="relative"
             style={{
-              transform: `rotateX(${-tilt.y * 5}deg) rotateY(${tilt.x * 7}deg) translateY(${
+              transform: `rotateX(${-tilt.y * 4}deg) rotateY(${tilt.x * 6}deg) translateY(${
                 -scroll * 0.05
               }px)`,
               transformStyle: "preserve-3d",
@@ -99,30 +89,29 @@ export function Hero() {
               alt="CRISPO COOKIES emblem"
               width={220}
               height={220}
-              className="absolute -top-4 -left-2 size-24 rounded-full object-contain shadow-lift sm:size-32"
+              className="absolute -top-6 -left-4 z-10 size-24 rounded-full object-contain shadow-lift sm:size-32"
               style={{ transform: "translateZ(70px)" }}
             />
-            <div className="animate-float" style={{ transform: "translateZ(40px)" }}>
-              <img
-                src={heroCookie}
-                alt="Premium CRISPO chocolate chip oat cookie with a bite taken out"
-                width={1280}
-                height={1280}
-                className="w-full object-contain drop-shadow-[0_50px_50px_oklch(0.33_0.13_302/0.35)]"
-              />
-            </div>
+            <HeroVideoCarousel />
             <div
               aria-hidden
-              className="mx-auto h-6 w-2/3 rounded-[50%] bg-plum/25 blur-xl"
+              className="mx-auto mt-4 h-6 w-2/3 rounded-[50%] bg-plum/20 blur-xl"
               style={{ transform: "translateZ(-40px)" }}
             />
-            <span
-              aria-hidden
-              className="absolute top-1/4 right-2 size-16 rounded-full opacity-70 blur-[1px] [background:var(--gradient-gold)]"
-              style={{
-                transform: `translate3d(${tilt.x * 22}px, ${tilt.y * 18}px, 60px)`,
-                transition: "transform 600ms cubic-bezier(0.22,1,0.36,1)",
-              }}
+          </div>
+
+          {/* premium packaging visual — replaces the old lavender blob */}
+          <div
+            className="animate-float pointer-events-none absolute -bottom-10 -left-4 w-40 sm:-left-12 sm:w-56 lg:-left-20 lg:w-64"
+            style={{
+              transform: `translate3d(${tilt.x * -12}px, ${tilt.y * -8 - scroll * 0.03}px, 0)`,
+              transition: "transform 600ms cubic-bezier(0.22,1,0.36,1)",
+            }}
+          >
+            <img
+              src={packagingAsset.url}
+              alt="Premium CRISPO all-mix cookie box with double chocolate, rose, pineapple and dry seed cookies"
+              className="w-full rounded-[1.75rem] object-contain drop-shadow-[0_36px_44px_oklch(0.33_0.13_302/0.35)]"
             />
           </div>
         </div>
