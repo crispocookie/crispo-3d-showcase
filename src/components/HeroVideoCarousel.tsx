@@ -51,7 +51,7 @@ export function HeroVideoCarousel({ className = "" }: { className?: string }) {
       {/* premium edge light, never over the subject centre */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 rounded-[2.5rem] [background:linear-gradient(120deg,oklch(1_0_0/0.22)_0%,transparent_26%,transparent_84%,oklch(1_0_0/0.14)_100%)]"
+        className="pointer-events-none absolute inset-0 rounded-[2rem] [background:linear-gradient(120deg,oklch(1_0_0/0.22)_0%,transparent_26%,transparent_84%,oklch(1_0_0/0.14)_100%)]"
       />
 
       <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
