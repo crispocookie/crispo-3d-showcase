@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { MessageCircle } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import crispoLogo from "@/assets/crispo-logo.png";
-import packagingAsset from "@/assets/crispo-allmix-packaging.png.asset.json";
 import { BRAND, GENERAL_ENQUIRY, whatsappLink } from "@/lib/brand";
 import { ctaGold, ctaWhatsapp } from "./cta";
 import { HeroVideoCarousel } from "./HeroVideoCarousel";
