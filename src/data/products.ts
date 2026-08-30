@@ -237,7 +237,7 @@ export const products: Product[] = [
         fit: "cover",
       },
     ],
-    badge: ZERO,
+    badge: "",
     theme: "seed",
     craving: "Nutritious",
     featured: true,
