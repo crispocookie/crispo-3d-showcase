@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import video1 from "@/assets/crispo-hero-1.mp4.asset.json";
-import video2 from "@/assets/crispo-hero-2.mp4.asset.json";
+import video1 from "@/assets/crispo-hero-1.mp4";
+import video2 from "@/assets/crispo-hero-2.mp4";
 
-const clips = [video1.url, video2.url];
+const clips = [video1, video2];
 
 /**
  * Full-bleed cinematic hero background.

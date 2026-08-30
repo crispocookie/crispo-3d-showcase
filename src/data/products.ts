@@ -45,7 +45,8 @@ export type Product = {
   id: string;
   name: string;
   category: Category;
-  price: number;
+  price: number; // selling price
+  mrp: number; // MRP for display
   priceRange?: string;
   pack: string;
   packQuantity: string;
@@ -67,10 +68,11 @@ export const products: Product[] = [
     id: "double-chocolate-cookie",
     name: "Double Chocolate Cookie",
     category: "cookies",
-    price: 300,
+    price: 219,
+    mrp: 399,
     pack: "1 box",
-    packQuantity: "5 cookies",
-    weight: "250 grams",
+    packQuantity: "6 cookies",
+    weight: "300 grams",
     description:
       "Rich, indulgent and deeply chocolatey, our Double Chocolate Cookie is made with pure oats powder and loaded with chocolate goodness. A premium cookie crafted for chocolate lovers who want indulgence with wholesome ingredients.",
     benefits: [
@@ -111,10 +113,11 @@ export const products: Product[] = [
     id: "rose-cookie",
     name: "Rose Cookie",
     category: "cookies",
-    price: 300,
+    price: 219,
+    mrp: 399,
     pack: "1 box",
-    packQuantity: "5 cookies",
-    weight: "250 grams",
+    packQuantity: "6 cookies",
+    weight: "300 grams",
     description:
       "A delicate floral twist on a wholesome cookie. Our Rose Cookie is made with homemade rose syrup prepared with fresh rose petals, creating a naturally aromatic and beautifully distinctive flavor.",
     benefits: [
@@ -153,12 +156,13 @@ export const products: Product[] = [
   },
   {
     id: "pine-apple-cookie",
-    name: "Pine Apple Cookie",
+    name: "Pineapple Cookie",
     category: "cookies",
-    price: 300,
+    price: 219,
+    mrp: 399,
     pack: "1 box",
-    packQuantity: "5 cookies",
-    weight: "50 grams per cookie",
+    packQuantity: "6 cookies",
+    weight: "300 grams",
     description:
       "A tropical, refreshing cookie crafted with homemade pineapple syrup and wholesome oats. Bright pineapple flavor meets a deliciously crisp cookie for a unique tropical experience.",
     benefits: [
@@ -198,12 +202,13 @@ export const products: Product[] = [
   },
   {
     id: "dry-seed-cookies",
-    name: "Dry Seed Cookies",
+    name: "Dry Seeds Cookie",
     category: "cookies",
-    price: 350,
+    price: 219,
+    mrp: 399,
     pack: "1 box",
     packQuantity: "4 cookies",
-    weight: "75 grams per cookie",
+    weight: "300 grams",
     description:
       "A nutrient-rich cookie loaded with four powerful seeds for a satisfying combination of crunch, nutrition and taste. Crunchy. Nutritious. Satisfying.",
     benefits: [
@@ -241,10 +246,11 @@ export const products: Product[] = [
     id: "all-mix-cookies",
     name: "All Mix Cookies",
     category: "cookies",
-    price: 250,
+    price: 179,
+    mrp: 299,
     pack: "1 box",
     packQuantity: "4 cookies",
-    weight: "Variety box",
+    weight: "200 grams",
     description:
       "A discovery box with a mix of CRISPO cookie flavors — the easiest way to find your favourite bite.",
     benefits: [ZERO, "A mix of CRISPO cookie flavors", "Made with oats", "Pure & wholesome"],
@@ -274,13 +280,13 @@ export const products: Product[] = [
   },
   {
     id: "double-chocolate-oats-brownie",
-    name: "Double Chocolate Oats Brownie",
+    name: "Double Chocolate Brownie",
     category: "brownies",
     price: 250,
-    priceRange: "₹250 – ₹300",
+    mrp: 499,
     pack: "1 box",
-    packQuantity: "Box 300 grams",
-    weight: "50 grams per brownie",
+    packQuantity: "6 pieces",
+    weight: "300 grams",
     description:
       "A rich, fudgy chocolate brownie crafted with oats and deep chocolate flavor. Crisp on the outside, fudgy inside and packed with irresistible chocolate goodness.",
     benefits: [ZERO, "Made with oats", "Deep chocolate flavor", "Pure & wholesome"],
@@ -310,13 +316,13 @@ export const products: Product[] = [
   },
   {
     id: "kaju-oats-brownie",
-    name: "Kaju Oats Brownie",
+    name: "Kaju Brownie",
     category: "brownies",
     price: 250,
-    priceRange: "₹250 – ₹300",
+    mrp: 499,
     pack: "1 box",
-    packQuantity: "Per brownie 50 grams",
-    weight: "50 grams per brownie",
+    packQuantity: "6 pieces",
+    weight: "300 grams",
     description:
       "A rich and fudgy chocolate brownie combined with the delicious crunch of premium cashews and the wholesome goodness of oats.",
     benefits: [ZERO, "Premium cashews", "Made with oats", "Pure & wholesome"],
@@ -398,7 +404,19 @@ export function searchProducts(query: string): Product[] {
 }
 
 export function productPrice(product: Product): string {
-  return product.priceRange ?? `₹${product.price}`;
+  return `₹${product.price}`;
+}
+
+export function getSellingPrice(product: Product): number {
+  return product.price;
+}
+
+export function getMRP(product: Product): number {
+  return product.mrp;
+}
+
+export function formatPrice(amount: number): string {
+  return `₹${amount}`;
 }
 
 export function productOrderMessage(product: Product, quantity = 1): string {
@@ -407,6 +425,6 @@ export function productOrderMessage(product: Product, quantity = 1): string {
     `Product: ${product.name}`,
     `Pack: ${product.packQuantity} / ${product.weight}`,
     `Quantity: ${quantity} box`,
-    `Price: ${productPrice(product)}`,
+    `Price: ₹${product.price} (MRP: ₹${product.mrp})`,
   ].join("\n");
 }

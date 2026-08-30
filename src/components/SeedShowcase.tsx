@@ -16,9 +16,9 @@ export function SeedShowcase() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
       <SectionHeading
-        eyebrow="Dry Seed Cookies"
+        eyebrow="Dry Seeds Cookie"
         title="Four super seeds. One serious cookie."
-        subtitle="Crunchy, nutritious and satisfying — ₹350 for a box of 4 cookies."
+        subtitle="Crunchy, nutritious and satisfying — ₹219 for a box of 4 cookies."
       />
 
       <div className="mt-14 grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">

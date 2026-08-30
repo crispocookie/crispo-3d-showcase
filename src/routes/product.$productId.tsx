@@ -6,7 +6,7 @@ import { ProductGallery } from "@/components/ProductGallery";
 import { ProductCard } from "@/components/ProductCard";
 import { badgeZero, ctaGold, ctaWhatsapp } from "@/components/cta";
 import { useCart } from "@/context/cart";
-import { getProduct, productOrderMessage, productPrice, relatedProducts } from "@/data/products";
+import { getProduct, productOrderMessage, relatedProducts } from "@/data/products";
 import { whatsappLink } from "@/lib/brand";
 import { useMeta } from "@/hooks/use-meta";
 
@@ -69,7 +69,10 @@ export default function ProductPage() {
               <p className="text-[0.62rem] font-bold tracking-[0.18em] text-plum uppercase">
                 Price
               </p>
-              <p className="mt-1 font-display text-2xl text-primary">{productPrice(product)}</p>
+              <div className="mt-1 flex items-center gap-2">
+                <p className="font-display text-2xl font-semibold text-primary">₹{product.price}</p>
+                <p className="text-lg line-through text-muted-foreground">₹{product.mrp}</p>
+              </div>
             </div>
             <div className="rounded-2xl bg-secondary/70 p-4">
               <p className="text-[0.62rem] font-bold tracking-[0.18em] text-plum uppercase">Pack</p>

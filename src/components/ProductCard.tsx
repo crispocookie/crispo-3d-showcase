@@ -5,7 +5,7 @@ import { ProductGallery } from "./ProductGallery";
 import { badgeZero } from "./cta";
 import { useCart } from "@/context/cart";
 import { whatsappLink } from "@/lib/brand";
-import { productOrderMessage, productPrice, type Product } from "@/data/products";
+import { productOrderMessage, type Product } from "@/data/products";
 
 export function ProductCard({ product }: { product: Product }) {
   const { add, openCart } = useCart();
@@ -28,7 +28,10 @@ export function ProductCard({ product }: { product: Product }) {
       <div className="flex flex-1 flex-col p-5">
         <div className="flex items-start justify-between gap-3">
           <h3 className="font-display text-2xl leading-tight text-primary">{product.name}</h3>
-          <span className="shrink-0 font-display text-xl text-plum">{productPrice(product)}</span>
+          <div className="shrink-0 flex items-center gap-2">
+            <span className="font-display text-xl font-semibold text-plum">₹{product.price}</span>
+            <span className="text-sm line-through text-muted-foreground">₹{product.mrp}</span>
+          </div>
         </div>
         <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
           {product.description}
