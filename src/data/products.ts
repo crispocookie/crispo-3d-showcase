@@ -280,7 +280,7 @@ export const products: Product[] = [
   },
   {
     id: "double-chocolate-oats-brownie",
-    name: "Double Chocolate Brownie",
+    name: "Double Chocolate Oats Brownie",
     category: "brownies",
     price: 250,
     mrp: 499,
@@ -316,7 +316,7 @@ export const products: Product[] = [
   },
   {
     id: "kaju-oats-brownie",
-    name: "Kaju Brownie",
+    name: "Kaju Oats Brownie",
     category: "brownies",
     price: 250,
     mrp: 499,
