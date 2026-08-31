@@ -17,7 +17,7 @@ export default function WhyCrispoPage() {
 
   return (
     <PageTransition>
-      <div className="pt-24">
+      <div className="pt-20 sm:pt-24">
         <PageHero
           eyebrow="Our Promise"
           title="WHY CRISPO?"

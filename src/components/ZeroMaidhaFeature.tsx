@@ -15,7 +15,7 @@ const particles = [
 /** Large, unmissable 100% ZERO MAIDHA statement section. */
 export function ZeroMaidhaFeature({ copy }: { copy: string }) {
   return (
-    <section className="relative overflow-hidden bg-[oklch(0.33_0.13_302)] py-24 sm:py-32">
+    <section className="relative overflow-hidden bg-[oklch(0.33_0.13_302)] py-14 sm:py-32">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="absolute top-[-10rem] left-1/2 size-[36rem] -translate-x-1/2 rounded-full bg-[oklch(0.78_0.13_85/0.16)] blur-3xl" />
         {particles.map((p, i) => (

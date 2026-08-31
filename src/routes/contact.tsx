@@ -28,7 +28,7 @@ export default function ContactPage() {
 
   return (
     <PageTransition>
-      <div className="pt-24">
+      <div className="pt-20 sm:pt-24">
         <PageHero
           eyebrow="Contact"
           title="LET'S TALK CRISPO"
@@ -64,7 +64,7 @@ export default function ContactPage() {
         </section>
 
         {/* WhatsApp CTA */}
-        <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-24">
+        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-24">
           <div className="relative overflow-hidden rounded-[2.5rem] bg-[oklch(0.33_0.13_302)] px-6 py-16 text-center shadow-lift sm:px-14">
             <div aria-hidden className="pointer-events-none absolute inset-0">
               <div className="absolute -top-24 left-1/2 size-[26rem] -translate-x-1/2 rounded-full bg-[oklch(0.78_0.13_85/0.16)] blur-3xl" />

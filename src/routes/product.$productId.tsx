@@ -40,7 +40,7 @@ export default function ProductPage() {
 
   return (
     <article className="pt-28 pb-20 sm:pt-32">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:items-start">
+      <div className="mx-auto grid max-w-7xl gap-6 px-4 sm:gap-10 sm:px-6 lg:grid-cols-[1fr_0.9fr] lg:items-start">
         <div className="scene-3d">
           <ProductGallery
             images={product.images}

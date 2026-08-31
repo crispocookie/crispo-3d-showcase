@@ -49,12 +49,12 @@ const tiles = [
 
 export function VisualStory() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+    <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-28">
       <SectionHeading
         eyebrow="Crispo Visual Story"
         title="A closer look at every CRISPO creation."
       />
-      <div className="mt-14 grid gap-4 sm:grid-cols-6">
+      <div className="mt-8 grid sm:mt-14 gap-4 sm:grid-cols-6">
         {tiles.map((t, i) => (
           <Reveal key={t.alt} delay={i * 0.05} className={`scene-3d ${t.span}`}>
             <img

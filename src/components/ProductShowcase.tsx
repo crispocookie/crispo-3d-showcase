@@ -27,7 +27,7 @@ export function ProductShowcase({
   }, [category, query]);
 
   return (
-    <section id="collection" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+    <section id="collection" className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-28">
       <SectionHeading
         eyebrow={eyebrow}
         title={title ?? (category === "cookies" ? "Crispo Cookies" : "Crispo Brownies")}
@@ -86,7 +86,7 @@ export function ProductShowcase({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -12 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-8 grid grid-cols-2 gap-3 sm:mt-12 sm:gap-6 lg:grid-cols-3"
         >
           {list.length === 0 ? (
             <p className="col-span-full py-10 text-center text-sm text-muted-foreground">

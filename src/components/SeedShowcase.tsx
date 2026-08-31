@@ -14,14 +14,14 @@ const stats = [
 
 export function SeedShowcase() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+    <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-28">
       <SectionHeading
         eyebrow="Dry Seeds Cookie"
         title="Four super seeds. One serious cookie."
         subtitle="Crunchy, nutritious and satisfying — ₹219 for a box of 4 cookies."
       />
 
-      <div className="mt-14 grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
+      <div className="mt-8 grid sm:mt-14 items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
         <Reveal className="scene-3d">
           <div className="grid grid-cols-2 gap-4">
             <img

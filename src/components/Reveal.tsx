@@ -46,7 +46,7 @@ export function SectionHeading({
         <p className={tone === "dark" ? "eyebrow text-gold" : "eyebrow"}>{eyebrow}</p>
       ) : null}
       <h2
-        className={`mt-3 text-4xl leading-[1.05] font-medium sm:text-5xl ${
+        className={`mt-2.5 text-[1.75rem] leading-[1.08] font-medium sm:mt-3 sm:text-5xl ${
           tone === "dark" ? "text-cream" : "text-primary"
         }`}
       >
@@ -54,7 +54,7 @@ export function SectionHeading({
       </h2>
       {subtitle ? (
         <p
-          className={`mt-4 text-base leading-relaxed ${
+          className={`mt-3 text-sm leading-relaxed sm:mt-4 sm:text-base ${
             tone === "dark" ? "text-cream/70" : "text-muted-foreground"
           }`}
         >
