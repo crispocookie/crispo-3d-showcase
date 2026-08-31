@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 
 export function AboutSection() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+    <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-28">
       <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.1fr]">
         <Reveal>
           <p className="eyebrow">About Crispo</p>

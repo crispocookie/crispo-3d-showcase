@@ -14,7 +14,7 @@ const stats = [
 
 export function SeedShowcase() {
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+    <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-28">
       <SectionHeading
         eyebrow="Dry Seeds Cookie"
         title="Four super seeds. One serious cookie."

@@ -33,7 +33,7 @@ export default function AboutPage() {
 
         <ZeroMaidhaFeature copy="Wholesome oat-based goodness crafted for delicious everyday indulgence." />
 
-        <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_1fr]">
             <Reveal>
               <p className="eyebrow">Our Philosophy</p>

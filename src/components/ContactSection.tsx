@@ -12,7 +12,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
+    <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-28">
       <div className="overflow-hidden rounded-[2.5rem] border border-lavender/50 bg-card/80 p-8 shadow-lift sm:p-14">
         <SectionHeading
           eyebrow="Contact"
