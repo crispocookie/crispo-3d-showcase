@@ -106,7 +106,10 @@ export function ProductGallery({
           <>
             <button
               type="button"
-              onClick={() => go(-1)}
+              onClick={(event) => {
+                event.stopPropagation();
+                go(-1);
+              }}
               aria-label="Previous image"
               className="absolute top-1/2 left-2 -translate-y-1/2 rounded-full bg-cream/85 p-2 text-primary opacity-0 shadow-soft transition-opacity duration-300 group-hover:opacity-100 focus-visible:opacity-100"
             >
@@ -114,7 +117,10 @@ export function ProductGallery({
             </button>
             <button
               type="button"
-              onClick={() => go(1)}
+              onClick={(event) => {
+                event.stopPropagation();
+                go(1);
+              }}
               aria-label="Next image"
               className="absolute top-1/2 right-2 -translate-y-1/2 rounded-full bg-cream/85 p-2 text-primary opacity-0 shadow-soft transition-opacity duration-300 group-hover:opacity-100 focus-visible:opacity-100"
             >
@@ -123,10 +129,13 @@ export function ProductGallery({
           </>
         ) : null}
 
-        {images.length > 0 ? (
+        {showControls && images.length > 0 ? (
           <button
             type="button"
-            onClick={openPreview}
+            onClick={(event) => {
+              event.stopPropagation();
+              openPreview();
+            }}
             aria-label="Preview current image"
             className="absolute bottom-3 left-3 z-10 inline-flex items-center gap-2 rounded-full border border-white/40 bg-cream/80 px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-primary shadow-soft backdrop-blur-sm transition-transform duration-200 hover:-translate-y-0.5 hover:bg-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/80"
           >
