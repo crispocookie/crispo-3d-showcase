@@ -33,7 +33,7 @@ export default function WhyCrispoPage() {
 
         <WhyCrispo />
         <CravingScroll />
-        <FeaturedCarousel />
+        <FeaturedCarousel variant="reels" />
       </div>
     </PageTransition>
   );
