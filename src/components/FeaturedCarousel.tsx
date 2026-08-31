@@ -14,7 +14,7 @@ export function FeaturedCarousel() {
   };
 
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-12 sm:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
@@ -46,10 +46,10 @@ export function FeaturedCarousel() {
 
       <div
         ref={track}
-        className="no-scrollbar mt-10 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 sm:px-6"
+        className="no-scrollbar mt-6 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-4 sm:mt-10 sm:gap-6 sm:px-6"
       >
         {featuredProducts.map((p) => (
-          <div key={p.id} className="w-[85vw] shrink-0 snap-start sm:w-[22rem]">
+          <div key={p.id} className="w-[46vw] shrink-0 snap-start sm:w-[22rem]">
             <ProductCard product={p} />
           </div>
         ))}
