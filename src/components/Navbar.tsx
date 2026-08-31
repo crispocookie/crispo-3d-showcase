@@ -97,7 +97,7 @@ export function Navbar() {
               href={whatsappLink(GENERAL_ENQUIRY)}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${ctaPrimary} hidden sm:inline-flex sm:h-10 sm:px-5`}
+              className={`${ctaPrimary} !hidden whitespace-nowrap sm:!inline-flex sm:h-10 sm:px-5`}
             >
               ORDER NOW
             </a>
