@@ -16,7 +16,7 @@ const nav = [
 export function Footer() {
   return (
     <footer className="[background:var(--gradient-royal)]">
-      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr]">
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-10 sm:py-16 sm:px-6 lg:grid-cols-[1.2fr_1fr_1fr]">
         <div>
           <div className="flex items-center gap-3">
             <img

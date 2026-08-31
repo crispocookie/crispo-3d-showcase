@@ -10,7 +10,7 @@ export default function BrowniesPage() {
   useMeta({ title, description });
 
   return (
-    <div className="pt-24">
+    <div className="pt-20 sm:pt-24">
       <h1 className="sr-only">CRISPO COOKIES Brownie Collection</h1>
       <ProductShowcase
         initialCategory="brownies"

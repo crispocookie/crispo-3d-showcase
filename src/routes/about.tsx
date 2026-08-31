@@ -22,7 +22,7 @@ export default function AboutPage() {
 
   return (
     <PageTransition>
-      <div className="pt-24">
+      <div className="pt-20 sm:pt-24">
         <PageHero
           eyebrow="About Crispo"
           title="THE STORY BEHIND CRISPO"

@@ -65,7 +65,7 @@ export function PageHero({
       </div>
 
 
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[1.05fr_1fr]">
+      <div className="mx-auto grid max-w-7xl items-center gap-6 px-4 sm:gap-10 sm:px-6 lg:grid-cols-[1.05fr_1fr]">
         <div className="animate-rise text-center lg:text-left">
           {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
           <h1 className="mt-4 font-display text-5xl leading-[0.98] font-medium text-primary sm:text-6xl lg:text-[4.4rem]">

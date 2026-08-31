@@ -54,7 +54,7 @@ export function VisualStory() {
         eyebrow="Crispo Visual Story"
         title="A closer look at every CRISPO creation."
       />
-      <div className="mt-14 grid gap-4 sm:grid-cols-6">
+      <div className="mt-8 grid sm:mt-14 gap-4 sm:grid-cols-6">
         {tiles.map((t, i) => (
           <Reveal key={t.alt} delay={i * 0.05} className={`scene-3d ${t.span}`}>
             <img

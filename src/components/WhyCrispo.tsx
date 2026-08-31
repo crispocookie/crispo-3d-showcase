@@ -37,7 +37,7 @@ export function WhyCrispo() {
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
       <SectionHeading eyebrow="Why Crispo?" title="Premium by intention, wholesome by recipe." />
 
-      <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-8 grid sm:mt-14 gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {reasons.map((r, i) => (
           <motion.article
             key={r.title}

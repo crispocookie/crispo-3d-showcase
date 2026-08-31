@@ -28,7 +28,7 @@ export function JourneySection() {
   return (
     <section className="mx-auto max-w-7xl px-4 py-20 sm:px-6 sm:py-28">
       <SectionHeading eyebrow="From Ingredients To Bite" title="How every CRISPO box happens." />
-      <ol className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <ol className="mt-8 grid sm:mt-14 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {stages.map((s, i) => (
           <motion.li
             key={s.n}

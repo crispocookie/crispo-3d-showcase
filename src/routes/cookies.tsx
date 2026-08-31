@@ -19,7 +19,7 @@ export default function CookiesPage() {
 
   return (
     <PageTransition>
-      <div className="pt-24">
+      <div className="pt-20 sm:pt-24">
         <PageHero
           eyebrow="The Cookie Collection"
           title="CRISPO COOKIES"

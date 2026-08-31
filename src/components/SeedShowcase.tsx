@@ -21,7 +21,7 @@ export function SeedShowcase() {
         subtitle="Crunchy, nutritious and satisfying — ₹219 for a box of 4 cookies."
       />
 
-      <div className="mt-14 grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
+      <div className="mt-8 grid sm:mt-14 items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
         <Reveal className="scene-3d">
           <div className="grid grid-cols-2 gap-4">
             <img

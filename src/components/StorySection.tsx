@@ -7,7 +7,7 @@ const cravings = ["Chocolate", "Floral", "Tropical", "Nutritious", "Brownie"] as
 
 export function StorySection() {
   return (
-    <section className="relative overflow-hidden py-20 sm:py-28 [background:var(--gradient-cocoa)]">
+    <section className="relative overflow-hidden py-12 sm:py-28 [background:var(--gradient-cocoa)]">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <SectionHeading
           tone="dark"
