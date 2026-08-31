@@ -81,8 +81,8 @@ export function ProductCard({ product }: { product: Product }) {
               className="inline-flex h-9 items-center justify-center gap-1.5 rounded-full px-2 text-[0.58rem] font-bold tracking-[0.1em] text-primary-foreground transition-transform hover:-translate-y-0.5 [background:var(--gradient-royal)] sm:h-11 sm:gap-2 sm:text-[0.68rem] sm:tracking-[0.14em]"
             >
               <ShoppingBag className="size-3.5 shrink-0 sm:size-4" aria-hidden />
-              <span className="hidden xs:inline sm:inline">ADD</span>
-              <span className="hidden sm:inline">&nbsp;TO CART</span>
+              <span className="sm:hidden">ADD</span>
+              <span className="hidden sm:inline">ADD TO CART</span>
             </button>
             <a
               href={whatsappLink(productOrderMessage(product))}
@@ -92,8 +92,8 @@ export function ProductCard({ product }: { product: Product }) {
               className="inline-flex h-9 items-center justify-center gap-1.5 rounded-full bg-[oklch(0.63_0.17_150)] px-2 text-[0.58rem] font-bold tracking-[0.1em] text-white transition-transform hover:-translate-y-0.5 sm:h-11 sm:gap-2 sm:text-[0.68rem] sm:tracking-[0.14em]"
             >
               <MessageCircle className="size-3.5 shrink-0 sm:size-4" aria-hidden />
-              <span className="hidden xs:inline sm:inline">CHAT</span>
-              <span className="hidden sm:inline">&nbsp;</span>
+              <span className="sm:hidden">CHAT</span>
+              <span className="hidden sm:inline">WHATSAPP</span>
             </a>
           </div>
           <Link
