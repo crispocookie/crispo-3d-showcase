@@ -45,14 +45,14 @@ export function Hero() {
             Premium oat-based cookies &amp; brownies, handcrafted with love.
           </p>
           <div className="mt-5 flex flex-wrap gap-2 sm:mt-9 sm:gap-3">
-            <Link to="/cookies" className={`${ctaGold} h-10 px-5 text-[0.6rem] sm:h-12 sm:px-7 sm:text-xs`}>
+            <Link to="/cookies" className={ctaGold}>
               EXPLORE COOKIES
             </Link>
             <a
               href={whatsappLink(GENERAL_ENQUIRY)}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${ctaWhatsapp} h-10 px-5 text-[0.6rem] sm:h-12 sm:px-7 sm:text-xs`}
+              className={ctaWhatsapp}
             >
               <MessageCircle className="size-3.5 sm:size-4" aria-hidden /> ORDER ON WHATSAPP
             </a>
