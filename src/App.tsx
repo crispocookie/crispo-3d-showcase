@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { CartDrawer } from "@/components/CartDrawer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { MobileOrderBar } from "@/components/MobileOrderBar";
+import { ScrollToTop } from "@/components/ScrollToTop";
 
 import Index from "./routes/index";
 import AboutPage from "./routes/about";
@@ -48,6 +49,7 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <CartProvider>
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route element={<Layout />}>
               <Route path="/" element={<Index />} />
