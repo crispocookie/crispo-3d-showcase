@@ -71,12 +71,12 @@ export function Navbar() {
             ))}
           </ul>
 
-          <div className="flex items-center gap-1.5 sm:gap-2">
+          <div className="flex items-center gap-0.5 sm:gap-2">
             <button
               type="button"
               onClick={() => setSearchOpen(true)}
               aria-label="Search products"
-              className="rounded-full p-2.5 text-primary transition-colors hover:bg-secondary"
+              className="rounded-full p-2 text-primary transition-colors hover:bg-secondary sm:p-2.5"
             >
               <Search className="size-5" aria-hidden />
             </button>
@@ -84,7 +84,7 @@ export function Navbar() {
               type="button"
               onClick={openCart}
               aria-label={`Open cart, ${count} item${count === 1 ? "" : "s"}`}
-              className="relative rounded-full p-2.5 text-primary transition-colors hover:bg-secondary"
+              className="relative rounded-full p-2 text-primary transition-colors hover:bg-secondary sm:p-2.5"
             >
               <ShoppingBag className="size-5" aria-hidden />
               {count > 0 ? (
@@ -97,7 +97,7 @@ export function Navbar() {
               href={whatsappLink(GENERAL_ENQUIRY)}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${ctaPrimary} hidden h-10 px-5 sm:inline-flex`}
+              className={`${ctaPrimary} hidden sm:inline-flex sm:h-10 sm:px-5`}
             >
               ORDER NOW
             </a>
@@ -105,7 +105,7 @@ export function Navbar() {
               type="button"
               onClick={() => setMenuOpen(true)}
               aria-label="Open menu"
-              className="rounded-full p-2.5 text-primary transition-colors hover:bg-secondary lg:hidden"
+              className="rounded-full p-2 text-primary transition-colors hover:bg-secondary sm:p-2.5 lg:hidden"
             >
               <Menu className="size-5" aria-hidden />
             </button>
