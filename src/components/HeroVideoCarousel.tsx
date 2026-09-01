@@ -27,7 +27,10 @@ export function HeroVideoCarousel({ className = "" }: { className?: string }) {
   }, [active]);
 
   return (
-    <div aria-hidden className={`absolute inset-0 overflow-hidden ${className}`}>
+    <div
+      aria-hidden
+      className={`relative aspect-video w-full shrink-0 overflow-hidden sm:absolute sm:inset-0 sm:aspect-auto ${className}`}
+    >
       {clips.map((src, i) => (
         <video
           key={src}
@@ -42,7 +45,7 @@ export function HeroVideoCarousel({ className = "" }: { className?: string }) {
           controls={false}
           disablePictureInPicture
           onEnded={() => setActive((cur) => (cur === i ? (i + 1) % clips.length : cur))}
-          className="absolute inset-0 size-full object-cover object-center transition-opacity duration-[1400ms] ease-out"
+          className="absolute inset-0 size-full object-contain object-center transition-opacity duration-[1400ms] ease-out sm:object-cover"
           style={{ opacity: active === i ? 1 : 0 }}
         />
       ))}

@@ -24,7 +24,7 @@ export default function Index() {
         eyebrow="The Collection"
         subtitle="Switch between cookies and brownies — every box is 100% ZERO MAIDHA."
       />
-      <FeaturedCarousel />
+      <FeaturedCarousel variant="reels" />
       <StorySection />
       <WhyCrispo />
       <AboutSection />

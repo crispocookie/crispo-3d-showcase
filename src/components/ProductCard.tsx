@@ -5,6 +5,7 @@ import type { Product } from "@/data/products";
 
 export function ProductCard({ product }: { product: Product }) {
   const navigate = useNavigate();
+  const discountPercent = Math.round(((product.mrp - product.price) / product.mrp) * 100);
 
   const openProduct = () => navigate(`/product/${product.id}`);
 
@@ -33,6 +34,9 @@ export function ProductCard({ product }: { product: Product }) {
           showControls={false}
           className="aspect-square [transform:translateZ(0)] transition-transform duration-500 group-hover:scale-[1.02]"
         />
+        <span className="pointer-events-none absolute top-3 left-3 z-10 rounded-full bg-espresso px-2.5 py-1 text-[0.62rem] font-bold tracking-[0.08em] text-cream shadow-soft sm:top-4 sm:left-4 sm:px-3 sm:py-1.5 sm:text-xs">
+          {discountPercent}% OFF
+        </span>
       </div>
 
       <div className="flex flex-1 flex-col gap-2 p-2.5 sm:p-3.5">
