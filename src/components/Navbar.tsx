@@ -39,8 +39,11 @@ export function Navbar() {
 
   return (
     <>
+      <div className="flex items-center justify-center border-b border-[#f3e5d3]/15 bg-[#2b1d18] px-4 py-2 text-center text-[0.68rem] font-medium tracking-[0.14em] text-[#f4efe8] uppercase sm:text-[0.7rem]">
+        <span className="truncate">🍪 Welcome to Crispo Cookies</span>
+      </div>
       <header
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+        className={`relative inset-x-0 top-0 z-50 transition-all duration-500 lg:fixed ${
           scrolled
             ? "border-b border-lavender/40 bg-cream/85 py-2 backdrop-blur-md shadow-soft"
             : "py-4"
